@@ -1,0 +1,89 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"25 mcc_generated_files/drivers/i2c_types.c
+[; ;mcc_generated_files/drivers/i2c_types.c: 25: i2c_operations_t i2c_returnStop(void *p)
+[c E363 1 2 3 4 5 .. ]
+[n E363 . i2c_stop i2c_restart_read i2c_restart_write i2c_continue i2c_reset_link  ]
+"25 mcc_generated_files/drivers/i2c_types.c
+[; ;mcc_generated_files/drivers/i2c_types.c: 25: i2c_operations_t i2c_returnStop(void *p)
+[v _i2c_returnStop `(E363 ~T0 @X0 1 ef1`*v ]
+"26
+[; ;mcc_generated_files/drivers/i2c_types.c: 26: {
+{
+[e :U _i2c_returnStop ]
+"25
+[; ;mcc_generated_files/drivers/i2c_types.c: 25: i2c_operations_t i2c_returnStop(void *p)
+[v _p `*v ~T0 @X0 1 r1 ]
+"26
+[; ;mcc_generated_files/drivers/i2c_types.c: 26: {
+[f ]
+"27
+[; ;mcc_generated_files/drivers/i2c_types.c: 27:     return i2c_stop;
+[e ) . `E363 0 ]
+[e $UE 3  ]
+"28
+[; ;mcc_generated_files/drivers/i2c_types.c: 28: }
+[e :UE 3 ]
+}
+"30
+[; ;mcc_generated_files/drivers/i2c_types.c: 30: i2c_operations_t i2c_returnReset(void *p)
+[v _i2c_returnReset `(E363 ~T0 @X0 1 ef1`*v ]
+"31
+[; ;mcc_generated_files/drivers/i2c_types.c: 31: {
+{
+[e :U _i2c_returnReset ]
+"30
+[; ;mcc_generated_files/drivers/i2c_types.c: 30: i2c_operations_t i2c_returnReset(void *p)
+[v _p `*v ~T0 @X0 1 r1 ]
+"31
+[; ;mcc_generated_files/drivers/i2c_types.c: 31: {
+[f ]
+"32
+[; ;mcc_generated_files/drivers/i2c_types.c: 32:     return i2c_reset_link;
+[e ) . `E363 4 ]
+[e $UE 4  ]
+"33
+[; ;mcc_generated_files/drivers/i2c_types.c: 33: }
+[e :UE 4 ]
+}
+"35
+[; ;mcc_generated_files/drivers/i2c_types.c: 35: i2c_operations_t i2c_restartWrite(void *p)
+[v _i2c_restartWrite `(E363 ~T0 @X0 1 ef1`*v ]
+"36
+[; ;mcc_generated_files/drivers/i2c_types.c: 36: {
+{
+[e :U _i2c_restartWrite ]
+"35
+[; ;mcc_generated_files/drivers/i2c_types.c: 35: i2c_operations_t i2c_restartWrite(void *p)
+[v _p `*v ~T0 @X0 1 r1 ]
+"36
+[; ;mcc_generated_files/drivers/i2c_types.c: 36: {
+[f ]
+"37
+[; ;mcc_generated_files/drivers/i2c_types.c: 37:     return i2c_restart_write;
+[e ) . `E363 2 ]
+[e $UE 5  ]
+"38
+[; ;mcc_generated_files/drivers/i2c_types.c: 38: }
+[e :UE 5 ]
+}
+"40
+[; ;mcc_generated_files/drivers/i2c_types.c: 40: i2c_operations_t i2c_restartRead(void *p)
+[v _i2c_restartRead `(E363 ~T0 @X0 1 ef1`*v ]
+"41
+[; ;mcc_generated_files/drivers/i2c_types.c: 41: {
+{
+[e :U _i2c_restartRead ]
+"40
+[; ;mcc_generated_files/drivers/i2c_types.c: 40: i2c_operations_t i2c_restartRead(void *p)
+[v _p `*v ~T0 @X0 1 r1 ]
+"41
+[; ;mcc_generated_files/drivers/i2c_types.c: 41: {
+[f ]
+"42
+[; ;mcc_generated_files/drivers/i2c_types.c: 42:     return i2c_restart_read;
+[e ) . `E363 1 ]
+[e $UE 6  ]
+"43
+[; ;mcc_generated_files/drivers/i2c_types.c: 43: }
+[e :UE 6 ]
+}
