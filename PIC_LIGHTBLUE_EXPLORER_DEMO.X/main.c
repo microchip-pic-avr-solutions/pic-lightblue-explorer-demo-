@@ -42,6 +42,7 @@
 #include "mcc_generated_files/rn487x/rn487x_interface.h"
 #include "mcc_generated_files/rn487x/rn487x.h"
 #include "mcc_generated_files/drivers/uart.h"
+#include "mcc_generated_files/application/BMA253_accel.h"
 
 /** MACRO used to reference Periodic Timer overflow flag Set. 
  *  This is used by the application to have a semi-accurate 
@@ -64,7 +65,9 @@
 static char statusBuffer[MAX_BUFFER_SIZE];      /**< Status Buffer instance passed to RN487X drive used for Asynchronous Message Handling (see *asyncBuffer in rn487x.c) */
 static char lightBlueSerial[MAX_BUFFER_SIZE];   /**< Message Buffer used for CDC Serial communication when connected. Terminated by \r, \n, MAX character Passes messages to BLE for transmisison. */
 static uint8_t serialIndex;                     /**< Local index value for serial communication buffer. */
-
+bool ACC_Interrupt_is_high(){
+    return iNTERRUPTbits.ACC == 1;
+}
 /*
                          Main application
  */
@@ -79,12 +82,18 @@ int main(void)
 
     // Enable the Peripheral Interrupts
     INTERRUPT_PeripheralInterruptEnable();
-
+    BMA253_Initialize();
     RN487X_Init();
     LIGHTBLUE_Initialize();
 
     while (1)
     {
+        if (ACC_Interrupt_is_high()){
+//            while(1){
+                serialIndex++;
+                ACC_INTERRUPT_SetLow();
+//            }
+        }
         if (RN487X_IsConnected() == true)
         {
             if (TIMER_FLAG_SET() == true)

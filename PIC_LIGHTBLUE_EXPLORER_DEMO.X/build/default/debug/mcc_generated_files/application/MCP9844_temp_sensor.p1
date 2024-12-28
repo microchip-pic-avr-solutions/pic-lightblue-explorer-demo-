@@ -1,0 +1,96 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"38 mcc_generated_files/application/../drivers/i2c_simple_master.h
+[; ;mcc_generated_files/application/../drivers/i2c_simple_master.h: 38: uint16_t i2c_read2ByteRegister(i2c1_address_t address, uint8_t reg);
+[v _i2c_read2ByteRegister `(us ~T0 @X0 0 ef2`uc`uc ]
+"58 mcc_generated_files/application/MCP9844_temp_sensor.c
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 58: static int16_t MCP9844_CalcTemperature(void);
+[v _MCP9844_CalcTemperature `(s ~T0 @X0 0 sf ]
+"60 mcc_generated_files/application/MCP9844_temp_sensor.c
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 60: uint16_t MCP9844_GetManufacture(void)
+[v _MCP9844_GetManufacture `(us ~T0 @X0 1 ef ]
+"61
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 61: {
+{
+[e :U _MCP9844_GetManufacture ]
+[f ]
+"62
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 62:     return i2c_read2ByteRegister((0x18), (0x06));
+[e ) ( _i2c_read2ByteRegister (2 , -> -> 24 `i `uc -> -> 6 `i `uc ]
+[e $UE 3  ]
+"63
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 63: }
+[e :UE 3 ]
+}
+"65
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 65: uint16_t MCP9844_GetDevice(void)
+[v _MCP9844_GetDevice `(us ~T0 @X0 1 ef ]
+"66
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 66: {
+{
+[e :U _MCP9844_GetDevice ]
+[f ]
+"67
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 67:     return i2c_read2ByteRegister((0x18), (0x07));
+[e ) ( _i2c_read2ByteRegister (2 , -> -> 24 `i `uc -> -> 7 `i `uc ]
+[e $UE 4  ]
+"68
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 68: }
+[e :UE 4 ]
+}
+"70
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 70: void MCP9844_GetTemperatureValue(int16_t *temperature)
+[v _MCP9844_GetTemperatureValue `(v ~T0 @X0 1 ef1`*s ]
+"71
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 71: {
+{
+[e :U _MCP9844_GetTemperatureValue ]
+"70
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 70: void MCP9844_GetTemperatureValue(int16_t *temperature)
+[v _temperature `*s ~T0 @X0 1 r1 ]
+"71
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 71: {
+[f ]
+"72
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 72:     *temperature = MCP9844_CalcTemperature();
+[e = *U _temperature ( _MCP9844_CalcTemperature ..  ]
+"73
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 73: }
+[e :UE 5 ]
+}
+"75
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 75: static int16_t MCP9844_CalcTemperature(void)
+[v _MCP9844_CalcTemperature `(s ~T0 @X0 1 sf ]
+"76
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 76: {
+{
+[e :U _MCP9844_CalcTemperature ]
+[f ]
+"77
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 77:     int16_t temperatureData;
+[v _temperatureData `s ~T0 @X0 1 a ]
+"78
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 78:     uint8_t upperByte;
+[v _upperByte `uc ~T0 @X0 1 a ]
+"79
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 79:     uint8_t lowerByte;
+[v _lowerByte `uc ~T0 @X0 1 a ]
+"81
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 81:     temperatureData = i2c_read2ByteRegister((0x18), (0x05));
+[e = _temperatureData -> ( _i2c_read2ByteRegister (2 , -> -> 24 `i `uc -> -> 5 `i `uc `s ]
+"82
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 82:     upperByte = ((temperatureData & (0xFF00)) >> 8) & (0x1F);
+[e = _upperByte -> & >> & -> _temperatureData `ui -> 65280 `ui -> 8 `i -> -> 31 `i `ui `uc ]
+"83
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 83:     lowerByte = (uint8_t)temperatureData;
+[e = _lowerByte -> _temperatureData `uc ]
+"85
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 85:     temperatureData = ((int16_t)(upperByte << 8) | lowerByte);
+[e = _temperatureData -> | -> -> << -> _upperByte `i -> 8 `i `s `i -> _lowerByte `i `s ]
+"87
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 87:     return temperatureData;
+[e ) _temperatureData ]
+[e $UE 6  ]
+"88
+[; ;mcc_generated_files/application/MCP9844_temp_sensor.c: 88: }
+[e :UE 6 ]
+}
