@@ -20719,6 +20719,8 @@ void LIGHTBLUE_SendProtocolVersion(void);
 void LIGHTBLUE_SendSerialData(char* serialData);
 # 126 "./mcc_generated_files/application/LIGHTBLUE_service.h"
 void LIGHTBLUE_ParseIncomingPacket(char receivedByte);
+
+void LIGHTBLUE_AccState(void);
 # 41 "main.c" 2
 
 # 1 "./mcc_generated_files/rn487x/rn487x_interface.h" 1
@@ -20897,22 +20899,34 @@ void BMA253_GetAccelDataXYZ(BMA253_ACCEL_DATA_t *accelData);
 
 
 uint8_t BMA253_GetAccelChipId(void);
+
+typedef union {
+    struct {
+        unsigned UNDEFINED : 7;
+        unsigned FLAT : 1;
+    };
+    uint8_t AccelerometerInterruptBits;
+}AccelerometerInterruptBits_t;
+volatile AccelerometerInterruptBits_t accelerometerInterruptBits;
 # 45 "main.c" 2
 # 65 "main.c"
 static char statusBuffer[(80)];
 static char lightBlueSerial[(80)];
 static uint8_t serialIndex;
-_Bool ACC_Interrupt_is_high(){
+
+_Bool ACC_Interrupt_is_high() {
     return iNTERRUPTbits.ACC == 1;
 }
+void service_acceleremoterInterrupt(void);
+uint8_t flats = 0;
 
 
 
-int main(void)
-{
+
+int main(void) {
 
     SYSTEM_Initialize();
-    RN487X_SetAsyncMessageHandler(statusBuffer, sizeof(statusBuffer));
+    RN487X_SetAsyncMessageHandler(statusBuffer, sizeof (statusBuffer));
 
 
     (INTCONbits.GIE = 1);
@@ -20922,19 +20936,10 @@ int main(void)
     BMA253_Initialize();
     RN487X_Init();
     LIGHTBLUE_Initialize();
-
-    while (1)
-    {
-        if (ACC_Interrupt_is_high()){
-
-                serialIndex++;
-                (iNTERRUPTbits.ACC = 0);
-
-        }
-        if (RN487X_IsConnected() == 1)
-        {
-            if ((TMR0_HasOverflowOccured()) == 1)
-            {
+    while (1) {
+        if (RN487X_IsConnected() == 1) {
+            service_acceleremoterInterrupt();
+            if ((TMR0_HasOverflowOccured()) == 1) {
                 (PIR0bits.TMR0IF = 0);
 
                 LIGHTBLUE_TemperatureSensor();
@@ -20942,43 +20947,45 @@ int main(void)
                 LIGHTBLUE_PushButton();
                 LIGHTBLUE_LedState();
                 LIGHTBLUE_SendProtocolVersion();
-            }
-            else
-            {
-                while (RN487X_DataReady())
-                {
+            } else {
+                while (RN487X_DataReady()) {
                     LIGHTBLUE_ParseIncomingPacket(RN487X_Read());
                 }
-                while (uart[UART_CDC].DataReady())
-                {
+                while (uart[UART_CDC].DataReady()) {
                     lightBlueSerial[serialIndex] = uart[UART_CDC].Read();
                     if ((lightBlueSerial[serialIndex] == '\r')
-                        || (lightBlueSerial[serialIndex] == '\n')
-                        || (serialIndex == (sizeof(lightBlueSerial) - 1)))
-                    {
+                            || (lightBlueSerial[serialIndex] == '\n')
+                            || (serialIndex == (sizeof (lightBlueSerial) - 1))) {
                         lightBlueSerial[serialIndex] = '\0';
                         LIGHTBLUE_SendSerialData(lightBlueSerial);
                         serialIndex = 0;
-                    }
-                    else
-                    {
+                    } else {
                         serialIndex++;
                     }
                 }
 
             }
-        }
-        else
-        {
-            while(RN487X_DataReady())
-            {
+        } else {
+            while (RN487X_DataReady()) {
                 uart[UART_CDC].Write(RN487X_Read());
             }
-            while (uart[UART_CDC].DataReady())
-            {
+            while (uart[UART_CDC].DataReady()) {
                 RN487X.Write(uart[UART_CDC].Read());
             }
         }
     }
     return 0;
+}
+
+void service_acceleremoterInterrupt(void) {
+    if (ACC_Interrupt_is_high()) {
+        (iNTERRUPTbits.ACC = 0);
+        accelerometerInterruptBits.FLAT = 1;
+        flats++;
+        if (flats > 1) {
+            LIGHTBLUE_AccState();
+            flats = 0;
+            accelerometerInterruptBits.FLAT = 0;
+        }
+    }
 }

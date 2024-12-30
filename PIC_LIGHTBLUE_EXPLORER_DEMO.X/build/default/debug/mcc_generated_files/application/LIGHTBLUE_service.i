@@ -199,6 +199,8 @@ void LIGHTBLUE_SendProtocolVersion(void);
 void LIGHTBLUE_SendSerialData(char* serialData);
 # 126 "mcc_generated_files/application/LIGHTBLUE_service.h"
 void LIGHTBLUE_ParseIncomingPacket(char receivedByte);
+
+void LIGHTBLUE_AccState(void);
 # 30 "mcc_generated_files/application/LIGHTBLUE_service.c" 2
 
 
@@ -348,6 +350,15 @@ void BMA253_GetAccelDataXYZ(BMA253_ACCEL_DATA_t *accelData);
 
 
 uint8_t BMA253_GetAccelChipId(void);
+
+typedef union {
+    struct {
+        unsigned UNDEFINED : 7;
+        unsigned FLAT : 1;
+    };
+    uint8_t AccelerometerInterruptBits;
+}AccelerometerInterruptBits_t;
+volatile AccelerometerInterruptBits_t accelerometerInterruptBits;
 # 35 "mcc_generated_files/application/LIGHTBLUE_service.c" 2
 
 # 1 "mcc_generated_files/application/MCP9844_temp_sensor.h" 1
@@ -20861,7 +20872,8 @@ typedef enum
     ACCEL_DATA_ID = 'X',
     SERIAL_DATA_ID = 'S',
     ERROR_ID = 'R',
-    UI_CONFIG_DATA_ID = 'U'
+    UI_CONFIG_DATA_ID = 'U',
+    ACC_STATE = 'A'
 }PROTOCOL_PACKET_TYPES_t;
 
 
@@ -20886,9 +20898,9 @@ const char * const protocol_version_number = "1.1.0";
 static char _hex[] = "0123456789ABCDEF";
 static uint8_t sequenceNumber = 0;
 static volatile rn487x_gpio_bitmap_t bitMap;
-# 226 "mcc_generated_files/application/LIGHTBLUE_service.c"
+# 227 "mcc_generated_files/application/LIGHTBLUE_service.c"
 static void LIGHTBLUE_SendPacket(char packetID, char* payload);
-# 235 "mcc_generated_files/application/LIGHTBLUE_service.c"
+# 236 "mcc_generated_files/application/LIGHTBLUE_service.c"
 static void LIGHTBLUE_SplitWord(char* payload, int16_t value);
 
 
@@ -20906,9 +20918,16 @@ static void LIGHTBLUE_SplitByte(char* payload, int8_t value);
 
 
 static uint8_t LIGHTBLUE_GetButtonValue(void);
-# 260 "mcc_generated_files/application/LIGHTBLUE_service.c"
-static uint8_t LIGHTBLUE_GetDataLedValue(void);
+
+
+
+
+
+
+static uint8_t LIGHTBLUE_GetAccState(void);
 # 269 "mcc_generated_files/application/LIGHTBLUE_service.c"
+static uint8_t LIGHTBLUE_GetDataLedValue(void);
+# 278 "mcc_generated_files/application/LIGHTBLUE_service.c"
 static uint8_t LIGHTBLUE_GetErrorLedValue(void);
 
 
@@ -20926,7 +20945,7 @@ static void LIGHTBLUE_SetErrorLedValue(_Bool value);
 
 
 static void LIGHTBLUE_UpdateErrorLed(void);
-# 299 "mcc_generated_files/application/LIGHTBLUE_service.c"
+# 308 "mcc_generated_files/application/LIGHTBLUE_service.c"
 static void LIGHTBLUE_PerformAction(char id, uint8_t data);
 
 void LIGHTBLUE_Initialize(void)
@@ -20974,6 +20993,18 @@ void LIGHTBLUE_PushButton(void)
 
     LIGHTBLUE_SendPacket(BUTTON_STATE_ID, payload);
 }
+
+void LIGHTBLUE_AccState(void)
+{
+    char payload[3];
+    uint8_t acc = LIGHTBLUE_GetAccState();
+
+    *payload = '\0';
+    LIGHTBLUE_SplitByte(payload, acc);
+
+    LIGHTBLUE_SendPacket(ACC_STATE, payload);
+}
+
 
 void LIGHTBLUE_LedState(void)
 {
@@ -21119,6 +21150,11 @@ static void LIGHTBLUE_SplitByte(char* payload, int8_t value)
 static uint8_t LIGHTBLUE_GetButtonValue(void)
 {
     return (0x01) - PORTAbits.RA7;
+}
+
+static uint8_t LIGHTBLUE_GetAccState(void)
+{
+    return accelerometerInterruptBits.AccelerometerInterruptBits;
 }
 
 static uint8_t LIGHTBLUE_GetDataLedValue(void)

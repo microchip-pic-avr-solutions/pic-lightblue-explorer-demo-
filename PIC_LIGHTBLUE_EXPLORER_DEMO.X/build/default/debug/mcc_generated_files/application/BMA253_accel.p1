@@ -1,4 +1,12 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"285 mcc_generated_files/application/BMA253_accel.h
+[; ;mcc_generated_files/application/BMA253_accel.h: 285:     struct {
+[s S3 :7 `uc 1 :1 `uc 1 ]
+[n S3 . UNDEFINED FLAT ]
+"284
+[; ;mcc_generated_files/application/BMA253_accel.h: 284: typedef union {
+[u S2 `S3 1 `uc 1 ]
+[n S2 . . AccelerometerInterruptBits ]
 "39 mcc_generated_files/application/../drivers/i2c_simple_master.h
 [; ;mcc_generated_files/application/../drivers/i2c_simple_master.h: 39: void i2c_write1ByteRegister(i2c1_address_t address, uint8_t reg, uint8_t data);
 [v _i2c_write1ByteRegister `(v ~T0 @X0 0 ef3`uc`uc`uc ]
@@ -18,6 +26,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/application/BMA253_accel.h: 224: {
 [s S1 `s 1 `s 1 `s 1 ]
 [n S1 . x y z ]
+"291 mcc_generated_files/application/BMA253_accel.h
+[; ;mcc_generated_files/application/BMA253_accel.h: 291: volatile AccelerometerInterruptBits_t accelerometerInterruptBits;
+[v _accelerometerInterruptBits `VS2 ~T0 @X0 1 e ]
 "68 mcc_generated_files/application/BMA253_accel.c
 [; ;mcc_generated_files/application/BMA253_accel.c: 68: uint8_t rad;
 [v _rad `uc ~T0 @X0 1 e ]
@@ -47,7 +58,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _rad ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 22 `i `uc ]
 "81
 [; ;mcc_generated_files/application/BMA253_accel.c: 81: }
-[e :UE 4 ]
+[e :UE 6 ]
 }
 "83
 [; ;mcc_generated_files/application/BMA253_accel.c: 83: void BMA253_GetAccelDataX(int16_t *xAccelData) {
@@ -64,17 +75,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _msbData `uc ~T0 @X0 1 a ]
 "86
 [; ;mcc_generated_files/application/BMA253_accel.c: 86:     while (!BMA253_NewAccelDataRdyX()) {
-[e $U 6  ]
-[e :U 7 ]
+[e $U 8  ]
+[e :U 9 ]
 {
 "88
 [; ;mcc_generated_files/application/BMA253_accel.c: 88:     }
 }
-[e :U 6 ]
+[e :U 8 ]
 "86
 [; ;mcc_generated_files/application/BMA253_accel.c: 86:     while (!BMA253_NewAccelDataRdyX()) {
-[e $ ! != -> ( _BMA253_NewAccelDataRdyX ..  `i -> 0 `i 7  ]
-[e :U 8 ]
+[e $ ! != -> ( _BMA253_NewAccelDataRdyX ..  `i -> 0 `i 9  ]
+[e :U 10 ]
 "90
 [; ;mcc_generated_files/application/BMA253_accel.c: 90:     lsbData = i2c_read1ByteRegister((0x19), (0x02));
 [e = _lsbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 2 `i `uc ]
@@ -86,7 +97,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = *U _xAccelData -> >> | << -> -> _msbData `s `i -> 8 `i -> _lsbData `i -> 4 `i `s ]
 "93
 [; ;mcc_generated_files/application/BMA253_accel.c: 93: }
-[e :UE 5 ]
+[e :UE 7 ]
 }
 "95
 [; ;mcc_generated_files/application/BMA253_accel.c: 95: void BMA253_GetAccelDataY(int16_t *yAccelData) {
@@ -103,17 +114,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _msbData `uc ~T0 @X0 1 a ]
 "98
 [; ;mcc_generated_files/application/BMA253_accel.c: 98:     while (!BMA253_NewAccelDataRdyY()) {
-[e $U 10  ]
-[e :U 11 ]
+[e $U 12  ]
+[e :U 13 ]
 {
 "100
 [; ;mcc_generated_files/application/BMA253_accel.c: 100:     }
 }
-[e :U 10 ]
+[e :U 12 ]
 "98
 [; ;mcc_generated_files/application/BMA253_accel.c: 98:     while (!BMA253_NewAccelDataRdyY()) {
-[e $ ! != -> ( _BMA253_NewAccelDataRdyY ..  `i -> 0 `i 11  ]
-[e :U 12 ]
+[e $ ! != -> ( _BMA253_NewAccelDataRdyY ..  `i -> 0 `i 13  ]
+[e :U 14 ]
 "102
 [; ;mcc_generated_files/application/BMA253_accel.c: 102:     lsbData = i2c_read1ByteRegister((0x19), (0x04));
 [e = _lsbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 4 `i `uc ]
@@ -125,7 +136,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = *U _yAccelData -> >> | << -> -> _msbData `s `i -> 8 `i -> _lsbData `i -> 4 `i `s ]
 "105
 [; ;mcc_generated_files/application/BMA253_accel.c: 105: }
-[e :UE 9 ]
+[e :UE 11 ]
 }
 "107
 [; ;mcc_generated_files/application/BMA253_accel.c: 107: void BMA253_GetAccelDataZ(int16_t *zAccelData) {
@@ -142,17 +153,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _msbData `uc ~T0 @X0 1 a ]
 "110
 [; ;mcc_generated_files/application/BMA253_accel.c: 110:     while (!BMA253_NewAccelDataRdyZ()) {
-[e $U 14  ]
-[e :U 15 ]
+[e $U 16  ]
+[e :U 17 ]
 {
 "112
 [; ;mcc_generated_files/application/BMA253_accel.c: 112:     }
 }
-[e :U 14 ]
+[e :U 16 ]
 "110
 [; ;mcc_generated_files/application/BMA253_accel.c: 110:     while (!BMA253_NewAccelDataRdyZ()) {
-[e $ ! != -> ( _BMA253_NewAccelDataRdyZ ..  `i -> 0 `i 15  ]
-[e :U 16 ]
+[e $ ! != -> ( _BMA253_NewAccelDataRdyZ ..  `i -> 0 `i 17  ]
+[e :U 18 ]
 "114
 [; ;mcc_generated_files/application/BMA253_accel.c: 114:     lsbData = i2c_read1ByteRegister((0x19), (0x06));
 [e = _lsbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 6 `i `uc ]
@@ -164,7 +175,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = *U _zAccelData -> >> | << -> -> _msbData `s `i -> 8 `i -> _lsbData `i -> 4 `i `s ]
 "117
 [; ;mcc_generated_files/application/BMA253_accel.c: 117: }
-[e :UE 13 ]
+[e :UE 15 ]
 }
 "119
 [; ;mcc_generated_files/application/BMA253_accel.c: 119: void BMA253_GetAccelDataXYZ(BMA253_ACCEL_DATA_t *accelData) {
@@ -178,17 +189,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _sensorValue `s ~T0 @X0 1 a ]
 "121
 [; ;mcc_generated_files/application/BMA253_accel.c: 121:     while (!BMA253_NewAccelDataRdyX()) {
-[e $U 18  ]
-[e :U 19 ]
+[e $U 20  ]
+[e :U 21 ]
 {
 "123
 [; ;mcc_generated_files/application/BMA253_accel.c: 123:     }
 }
-[e :U 18 ]
+[e :U 20 ]
 "121
 [; ;mcc_generated_files/application/BMA253_accel.c: 121:     while (!BMA253_NewAccelDataRdyX()) {
-[e $ ! != -> ( _BMA253_NewAccelDataRdyX ..  `i -> 0 `i 19  ]
-[e :U 20 ]
+[e $ ! != -> ( _BMA253_NewAccelDataRdyX ..  `i -> 0 `i 21  ]
+[e :U 22 ]
 "125
 [; ;mcc_generated_files/application/BMA253_accel.c: 125:     BMA253_GetAccelDataX(&sensorValue);
 [e ( _BMA253_GetAccelDataX (1 &U _sensorValue ]
@@ -197,17 +208,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . *U _accelData 0 _sensorValue ]
 "128
 [; ;mcc_generated_files/application/BMA253_accel.c: 128:     while (!BMA253_NewAccelDataRdyY()) {
-[e $U 21  ]
-[e :U 22 ]
+[e $U 23  ]
+[e :U 24 ]
 {
 "130
 [; ;mcc_generated_files/application/BMA253_accel.c: 130:     }
 }
-[e :U 21 ]
+[e :U 23 ]
 "128
 [; ;mcc_generated_files/application/BMA253_accel.c: 128:     while (!BMA253_NewAccelDataRdyY()) {
-[e $ ! != -> ( _BMA253_NewAccelDataRdyY ..  `i -> 0 `i 22  ]
-[e :U 23 ]
+[e $ ! != -> ( _BMA253_NewAccelDataRdyY ..  `i -> 0 `i 24  ]
+[e :U 25 ]
 "132
 [; ;mcc_generated_files/application/BMA253_accel.c: 132:     BMA253_GetAccelDataY(&sensorValue);
 [e ( _BMA253_GetAccelDataY (1 &U _sensorValue ]
@@ -216,17 +227,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . *U _accelData 1 _sensorValue ]
 "135
 [; ;mcc_generated_files/application/BMA253_accel.c: 135:     while (!BMA253_NewAccelDataRdyZ()) {
-[e $U 24  ]
-[e :U 25 ]
+[e $U 26  ]
+[e :U 27 ]
 {
 "137
 [; ;mcc_generated_files/application/BMA253_accel.c: 137:     }
 }
-[e :U 24 ]
+[e :U 26 ]
 "135
 [; ;mcc_generated_files/application/BMA253_accel.c: 135:     while (!BMA253_NewAccelDataRdyZ()) {
-[e $ ! != -> ( _BMA253_NewAccelDataRdyZ ..  `i -> 0 `i 25  ]
-[e :U 26 ]
+[e $ ! != -> ( _BMA253_NewAccelDataRdyZ ..  `i -> 0 `i 27  ]
+[e :U 28 ]
 "139
 [; ;mcc_generated_files/application/BMA253_accel.c: 139:     BMA253_GetAccelDataZ(&sensorValue);
 [e ( _BMA253_GetAccelDataZ (1 &U _sensorValue ]
@@ -235,7 +246,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . *U _accelData 2 _sensorValue ]
 "141
 [; ;mcc_generated_files/application/BMA253_accel.c: 141: }
-[e :UE 17 ]
+[e :UE 19 ]
 }
 "143
 [; ;mcc_generated_files/application/BMA253_accel.c: 143: uint8_t BMA253_GetAccelChipId(void) {
@@ -246,10 +257,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "144
 [; ;mcc_generated_files/application/BMA253_accel.c: 144:     return i2c_read1ByteRegister((0x19), (0x00));
 [e ) ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 0 `i `uc ]
-[e $UE 27  ]
+[e $UE 29  ]
 "145
 [; ;mcc_generated_files/application/BMA253_accel.c: 145: }
-[e :UE 27 ]
+[e :UE 29 ]
 }
 "147
 [; ;mcc_generated_files/application/BMA253_accel.c: 147: static _Bool BMA253_NewAccelDataRdyX(void) {
@@ -266,10 +277,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "152
 [; ;mcc_generated_files/application/BMA253_accel.c: 152:     return xNewData;
 [e ) _xNewData ]
-[e $UE 28  ]
+[e $UE 30  ]
 "153
 [; ;mcc_generated_files/application/BMA253_accel.c: 153: }
-[e :UE 28 ]
+[e :UE 30 ]
 }
 "155
 [; ;mcc_generated_files/application/BMA253_accel.c: 155: static _Bool BMA253_NewAccelDataRdyY(void) {
@@ -286,10 +297,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "160
 [; ;mcc_generated_files/application/BMA253_accel.c: 160:     return yNewData;
 [e ) _yNewData ]
-[e $UE 29  ]
+[e $UE 31  ]
 "161
 [; ;mcc_generated_files/application/BMA253_accel.c: 161: }
-[e :UE 29 ]
+[e :UE 31 ]
 }
 "163
 [; ;mcc_generated_files/application/BMA253_accel.c: 163: static _Bool BMA253_NewAccelDataRdyZ(void) {
@@ -306,8 +317,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "168
 [; ;mcc_generated_files/application/BMA253_accel.c: 168:     return zNewData;
 [e ) _zNewData ]
-[e $UE 30  ]
+[e $UE 32  ]
 "169
 [; ;mcc_generated_files/application/BMA253_accel.c: 169: }
-[e :UE 30 ]
+[e :UE 32 ]
 }

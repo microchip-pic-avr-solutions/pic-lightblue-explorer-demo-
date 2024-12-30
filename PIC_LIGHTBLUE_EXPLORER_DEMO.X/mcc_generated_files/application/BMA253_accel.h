@@ -281,5 +281,14 @@ void BMA253_GetAccelDataXYZ(BMA253_ACCEL_DATA_t *accelData);
  */
 uint8_t BMA253_GetAccelChipId(void);
 
+typedef union {
+    struct {
+        unsigned UNDEFINED  : 7;
+        unsigned FLAT       : 1;
+    };
+    uint8_t AccelerometerInterruptBits;
+}AccelerometerInterruptBits_t;
+volatile AccelerometerInterruptBits_t accelerometerInterruptBits;
+
 #endif	/* BMA253_ACCEL_H */
 

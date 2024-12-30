@@ -143,6 +143,15 @@ void BMA253_GetAccelDataXYZ(BMA253_ACCEL_DATA_t *accelData);
 
 
 uint8_t BMA253_GetAccelChipId(void);
+
+typedef union {
+    struct {
+        unsigned UNDEFINED : 7;
+        unsigned FLAT : 1;
+    };
+    uint8_t AccelerometerInterruptBits;
+}AccelerometerInterruptBits_t;
+volatile AccelerometerInterruptBits_t accelerometerInterruptBits;
 # 27 "mcc_generated_files/application/BMA253_accel.c" 2
 
 # 1 "mcc_generated_files/application/../drivers/i2c_simple_master.h" 1
