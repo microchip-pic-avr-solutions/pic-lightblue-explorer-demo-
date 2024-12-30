@@ -20928,6 +20928,7 @@ int main(void)
         if (ACC_Interrupt_is_high()){
 
                 serialIndex++;
+                (iNTERRUPTbits.ACC = 0);
 
         }
         if (RN487X_IsConnected() == 1)

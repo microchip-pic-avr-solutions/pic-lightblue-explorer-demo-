@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                               Sat Dec 28 16:12:23 2024
+                                                                                               Mon Dec 30 10:13:30 2024
 
 Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1 
      1                           	processor	16LF18456
@@ -19811,7 +19811,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19150     0FBF                     __ptext80:	
  19151 ;; *************** function _BMA253_GetAccelDataXYZ *****************
  19152 ;; Defined at:
- 19153 ;;		line 117 in file "mcc_generated_files/application/BMA253_accel.c"
+ 19153 ;;		line 119 in file "mcc_generated_files/application/BMA253_accel.c"
  19154 ;; Parameters:    Size  Location     Type
  19155 ;;  accelData       1    wreg     PTR struct .
  19156 ;;		 -> LIGHTBLUE_AccelSensor@accelData(6), 
@@ -19864,11 +19864,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19198     0FC0  00D7               	movwf	BMA253_GetAccelDataXYZ@accelData
  19199     0FC1                     l8701:
  19200     0FC1                     l8703:	
- 19201                           ;mcc_generated_files/application/BMA253_accel.c: 118:     int16_t sensorValue;;mcc_gener
-      +                          ated_files/application/BMA253_accel.c: 119:     while (!BMA253_NewAccelDataRdyX()) {
+ 19201                           ;mcc_generated_files/application/BMA253_accel.c: 120:     int16_t sensorValue;;mcc_gener
+      +                          ated_files/application/BMA253_accel.c: 121:     while (!BMA253_NewAccelDataRdyX()) {
  19202                           
  19203                           
- 19204                           ;mcc_generated_files/application/BMA253_accel.c: 119:     while (!BMA253_NewAccelDataRdy
+ 19204                           ;mcc_generated_files/application/BMA253_accel.c: 121:     while (!BMA253_NewAccelDataRdy
       +                          X()) {
  19205     0FC1  3188  2056  318F   	fcall	_BMA253_NewAccelDataRdyX
  19206     0FC4  3A00               	xorlw	0
@@ -19880,13 +19880,13 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19212     0FC9                     u4810:
  19213     0FC9                     l8705:
  19214                           
- 19215                           ;mcc_generated_files/application/BMA253_accel.c: 123:     BMA253_GetAccelDataX(&sensorVa
+ 19215                           ;mcc_generated_files/application/BMA253_accel.c: 125:     BMA253_GetAccelDataX(&sensorVa
       +                          lue);
  19216     0FC9  3058               	movlw	(low (BMA253_GetAccelDataXYZ@sensorValue| 0))& (0+255)
  19217     0FCA  318C  24B6  318F   	fcall	_BMA253_GetAccelDataX
  19218     0FCD                     l8707:
  19219                           
- 19220                           ;mcc_generated_files/application/BMA253_accel.c: 124:     accelData->x = sensorValue;
+ 19220                           ;mcc_generated_files/application/BMA253_accel.c: 126:     accelData->x = sensorValue;
  19221     0FCD  0140               	movlb	0	; select bank0
  19222     0FCE  0857               	movf	BMA253_GetAccelDataXYZ@accelData,w
  19223     0FCF  0086               	movwf	6
@@ -19896,11 +19896,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19227     0FD3  0859               	movf	BMA253_GetAccelDataXYZ@sensorValue+1,w
  19228     0FD4  3FC1               	movwi [1]fsr1
  19229     0FD5                     l8709:	
- 19230                           ;mcc_generated_files/application/BMA253_accel.c: 126:     while (!BMA253_NewAccelDataRdy
+ 19230                           ;mcc_generated_files/application/BMA253_accel.c: 128:     while (!BMA253_NewAccelDataRdy
       +                          Y()) {
  19231                           
  19232                           
- 19233                           ;mcc_generated_files/application/BMA253_accel.c: 126:     while (!BMA253_NewAccelDataRdy
+ 19233                           ;mcc_generated_files/application/BMA253_accel.c: 128:     while (!BMA253_NewAccelDataRdy
       +                          Y()) {
  19234     0FD5  3188  2067  318F   	fcall	_BMA253_NewAccelDataRdyY
  19235     0FD8  3A00               	xorlw	0
@@ -19912,13 +19912,13 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19241     0FDD                     u4820:
  19242     0FDD                     l8711:
  19243                           
- 19244                           ;mcc_generated_files/application/BMA253_accel.c: 130:     BMA253_GetAccelDataY(&sensorVa
+ 19244                           ;mcc_generated_files/application/BMA253_accel.c: 132:     BMA253_GetAccelDataY(&sensorVa
       +                          lue);
  19245     0FDD  3058               	movlw	(low (BMA253_GetAccelDataXYZ@sensorValue| 0))& (0+255)
  19246     0FDE  318C  24E4  318F   	fcall	_BMA253_GetAccelDataY
  19247     0FE1                     l8713:
  19248                           
- 19249                           ;mcc_generated_files/application/BMA253_accel.c: 131:     accelData->y = sensorValue;
+ 19249                           ;mcc_generated_files/application/BMA253_accel.c: 133:     accelData->y = sensorValue;
  19250     0FE1  0140               	movlb	0	; select bank0
  19251     0FE2  0857               	movf	BMA253_GetAccelDataXYZ@accelData,w
  19252     0FE3  3E02               	addlw	2
@@ -19929,11 +19929,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19257     0FE8  0859               	movf	BMA253_GetAccelDataXYZ@sensorValue+1,w
  19258     0FE9  3FC1               	movwi [1]fsr1
  19259     0FEA                     l8715:	
- 19260                           ;mcc_generated_files/application/BMA253_accel.c: 133:     while (!BMA253_NewAccelDataRdy
+ 19260                           ;mcc_generated_files/application/BMA253_accel.c: 135:     while (!BMA253_NewAccelDataRdy
       +                          Z()) {
  19261                           
  19262                           
- 19263                           ;mcc_generated_files/application/BMA253_accel.c: 133:     while (!BMA253_NewAccelDataRdy
+ 19263                           ;mcc_generated_files/application/BMA253_accel.c: 135:     while (!BMA253_NewAccelDataRdy
       +                          Z()) {
  19264     0FEA  3188  2078  318F   	fcall	_BMA253_NewAccelDataRdyZ
  19265     0FED  3A00               	xorlw	0
@@ -19945,13 +19945,13 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19271     0FF2                     u4830:
  19272     0FF2                     l8717:
  19273                           
- 19274                           ;mcc_generated_files/application/BMA253_accel.c: 137:     BMA253_GetAccelDataZ(&sensorVa
+ 19274                           ;mcc_generated_files/application/BMA253_accel.c: 139:     BMA253_GetAccelDataZ(&sensorVa
       +                          lue);
  19275     0FF2  3058               	movlw	(low (BMA253_GetAccelDataXYZ@sensorValue| 0))& (0+255)
  19276     0FF3  318D  2512  318F   	fcall	_BMA253_GetAccelDataZ
  19277     0FF6                     l8719:
  19278                           
- 19279                           ;mcc_generated_files/application/BMA253_accel.c: 138:     accelData->z = sensorValue;
+ 19279                           ;mcc_generated_files/application/BMA253_accel.c: 140:     accelData->z = sensorValue;
  19280     0FF6  0140               	movlb	0	; select bank0
  19281     0FF7  0857               	movf	BMA253_GetAccelDataXYZ@accelData,w
  19282     0FF8  3E04               	addlw	4
@@ -19969,7 +19969,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19294     0D12                     __ptext81:	
  19295 ;; *************** function _BMA253_GetAccelDataZ *****************
  19296 ;; Defined at:
- 19297 ;;		line 105 in file "mcc_generated_files/application/BMA253_accel.c"
+ 19297 ;;		line 107 in file "mcc_generated_files/application/BMA253_accel.c"
  19298 ;; Parameters:    Size  Location     Type
  19299 ;;  zAccelData      1    wreg     PTR short 
  19300 ;;		 -> BMA253_GetAccelDataXYZ@sensorValue(2), 
@@ -20019,12 +20019,12 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19339     0D13  00D4               	movwf	BMA253_GetAccelDataZ@zAccelData
  19340     0D14                     l8577:
  19341     0D14                     l8579:	
- 19342                           ;mcc_generated_files/application/BMA253_accel.c: 106:     uint8_t lsbData;;mcc_generated
-      +                          _files/application/BMA253_accel.c: 107:     uint8_t msbData;;mcc_generated_files/applica
-      +                          tion/BMA253_accel.c: 108:     while (!BMA253_NewAccelDataRdyZ()) {
+ 19342                           ;mcc_generated_files/application/BMA253_accel.c: 108:     uint8_t lsbData;;mcc_generated
+      +                          _files/application/BMA253_accel.c: 109:     uint8_t msbData;;mcc_generated_files/applica
+      +                          tion/BMA253_accel.c: 110:     while (!BMA253_NewAccelDataRdyZ()) {
  19343                           
  19344                           
- 19345                           ;mcc_generated_files/application/BMA253_accel.c: 108:     while (!BMA253_NewAccelDataRdy
+ 19345                           ;mcc_generated_files/application/BMA253_accel.c: 110:     while (!BMA253_NewAccelDataRdy
       +                          Z()) {
  19346     0D14  3188  2078  318D   	fcall	_BMA253_NewAccelDataRdyZ
  19347     0D17  3A00               	xorlw	0
@@ -20036,7 +20036,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19353     0D1C                     u4710:
  19354     0D1C                     l8581:
  19355                           
- 19356                           ;mcc_generated_files/application/BMA253_accel.c: 112:     lsbData = i2c_read1ByteRegiste
+ 19356                           ;mcc_generated_files/application/BMA253_accel.c: 114:     lsbData = i2c_read1ByteRegiste
       +                          r((0x19), (0x06));
  19357     0D1C  3006               	movlw	6
  19358     0D1D  0140               	movlb	0	; select bank0
@@ -20046,7 +20046,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19362     0D23  0140               	movlb	0	; select bank0
  19363     0D24  00D5               	movwf	BMA253_GetAccelDataZ@lsbData
  19364                           
- 19365                           ;mcc_generated_files/application/BMA253_accel.c: 113:     msbData = i2c_read1ByteRegiste
+ 19365                           ;mcc_generated_files/application/BMA253_accel.c: 115:     msbData = i2c_read1ByteRegiste
       +                          r((0x19), (0x07));
  19366     0D25  3007               	movlw	7
  19367     0D26  00CB               	movwf	i2c_read1ByteRegister@reg
@@ -20056,7 +20056,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19371     0D2C  00D6               	movwf	BMA253_GetAccelDataZ@msbData
  19372     0D2D                     l8583:
  19373                           
- 19374                           ;mcc_generated_files/application/BMA253_accel.c: 114:     *zAccelData = ((((int16_t) msb
+ 19374                           ;mcc_generated_files/application/BMA253_accel.c: 116:     *zAccelData = ((((int16_t) msb
       +                          Data) << 8) | (lsbData)) >> 4;
  19375     0D2D  0856               	movf	BMA253_GetAccelDataZ@msbData,w
  19376     0D2E  00D2               	movwf	??_BMA253_GetAccelDataZ+1
@@ -20085,7 +20085,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19399     0878                     __ptext82:	
  19400 ;; *************** function _BMA253_NewAccelDataRdyZ *****************
  19401 ;; Defined at:
- 19402 ;;		line 161 in file "mcc_generated_files/application/BMA253_accel.c"
+ 19402 ;;		line 163 in file "mcc_generated_files/application/BMA253_accel.c"
  19403 ;; Parameters:    Size  Location     Type
  19404 ;;		None
  19405 ;; Auto vars:     Size  Location     Type
@@ -20127,8 +20127,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19436                           ; Regs used in _BMA253_NewAccelDataRdyZ: [wreg-fsr1h+status,2+status,0+pclath+cstack]
  19437                           
  19438                           
- 19439                           ;mcc_generated_files/application/BMA253_accel.c: 162:     _Bool zNewData;;mcc_generated_
-      +                          files/application/BMA253_accel.c: 164:     zNewData = (i2c_read1ByteRegister((0x19), (0x
+ 19439                           ;mcc_generated_files/application/BMA253_accel.c: 164:     _Bool zNewData;;mcc_generated_
+      +                          files/application/BMA253_accel.c: 166:     zNewData = (i2c_read1ByteRegister((0x19), (0x
       +                          06)) & (0x01));
  19440     0878  3006               	movlw	6
  19441     0879  0140               	movlb	0	; select bank0
@@ -20148,7 +20148,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19455     0886  00FB               	movwf	BMA253_NewAccelDataRdyZ@zNewData
  19456     0887                     l8507:
  19457                           
- 19458                           ;mcc_generated_files/application/BMA253_accel.c: 166:     return zNewData;
+ 19458                           ;mcc_generated_files/application/BMA253_accel.c: 168:     return zNewData;
  19459     0887  087B               	movf	BMA253_NewAccelDataRdyZ@zNewData,w
  19460     0888                     l57:
  19461     0888  0008               	return
@@ -20158,7 +20158,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19465     0CE4                     __ptext83:	
  19466 ;; *************** function _BMA253_GetAccelDataY *****************
  19467 ;; Defined at:
- 19468 ;;		line 93 in file "mcc_generated_files/application/BMA253_accel.c"
+ 19468 ;;		line 95 in file "mcc_generated_files/application/BMA253_accel.c"
  19469 ;; Parameters:    Size  Location     Type
  19470 ;;  yAccelData      1    wreg     PTR short 
  19471 ;;		 -> BMA253_GetAccelDataXYZ@sensorValue(2), 
@@ -20208,12 +20208,12 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19510     0CE5  00D4               	movwf	BMA253_GetAccelDataY@yAccelData
  19511     0CE6                     l8569:
  19512     0CE6                     l8571:	
- 19513                           ;mcc_generated_files/application/BMA253_accel.c: 94:     uint8_t lsbData;;mcc_generated_
-      +                          files/application/BMA253_accel.c: 95:     uint8_t msbData;;mcc_generated_files/applicati
-      +                          on/BMA253_accel.c: 96:     while (!BMA253_NewAccelDataRdyY()) {
+ 19513                           ;mcc_generated_files/application/BMA253_accel.c: 96:     uint8_t lsbData;;mcc_generated_
+      +                          files/application/BMA253_accel.c: 97:     uint8_t msbData;;mcc_generated_files/applicati
+      +                          on/BMA253_accel.c: 98:     while (!BMA253_NewAccelDataRdyY()) {
  19514                           
  19515                           
- 19516                           ;mcc_generated_files/application/BMA253_accel.c: 96:     while (!BMA253_NewAccelDataRdyY
+ 19516                           ;mcc_generated_files/application/BMA253_accel.c: 98:     while (!BMA253_NewAccelDataRdyY
       +                          ()) {
  19517     0CE6  3188  2067  318C   	fcall	_BMA253_NewAccelDataRdyY
  19518     0CE9  3A00               	xorlw	0
@@ -20225,7 +20225,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19524     0CEE                     u4690:
  19525     0CEE                     l8573:
  19526                           
- 19527                           ;mcc_generated_files/application/BMA253_accel.c: 100:     lsbData = i2c_read1ByteRegiste
+ 19527                           ;mcc_generated_files/application/BMA253_accel.c: 102:     lsbData = i2c_read1ByteRegiste
       +                          r((0x19), (0x04));
  19528     0CEE  3004               	movlw	4
  19529     0CEF  0140               	movlb	0	; select bank0
@@ -20235,7 +20235,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19533     0CF5  0140               	movlb	0	; select bank0
  19534     0CF6  00D5               	movwf	BMA253_GetAccelDataY@lsbData
  19535                           
- 19536                           ;mcc_generated_files/application/BMA253_accel.c: 101:     msbData = i2c_read1ByteRegiste
+ 19536                           ;mcc_generated_files/application/BMA253_accel.c: 103:     msbData = i2c_read1ByteRegiste
       +                          r((0x19), (0x05));
  19537     0CF7  3005               	movlw	5
  19538     0CF8  00CB               	movwf	i2c_read1ByteRegister@reg
@@ -20245,7 +20245,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19542     0CFE  00D6               	movwf	BMA253_GetAccelDataY@msbData
  19543     0CFF                     l8575:
  19544                           
- 19545                           ;mcc_generated_files/application/BMA253_accel.c: 102:     *yAccelData = ((((int16_t) msb
+ 19545                           ;mcc_generated_files/application/BMA253_accel.c: 104:     *yAccelData = ((((int16_t) msb
       +                          Data) << 8) | (lsbData)) >> 4;
  19546     0CFF  0856               	movf	BMA253_GetAccelDataY@msbData,w
  19547     0D00  00D2               	movwf	??_BMA253_GetAccelDataY+1
@@ -20274,7 +20274,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19570     0867                     __ptext84:	
  19571 ;; *************** function _BMA253_NewAccelDataRdyY *****************
  19572 ;; Defined at:
- 19573 ;;		line 153 in file "mcc_generated_files/application/BMA253_accel.c"
+ 19573 ;;		line 155 in file "mcc_generated_files/application/BMA253_accel.c"
  19574 ;; Parameters:    Size  Location     Type
  19575 ;;		None
  19576 ;; Auto vars:     Size  Location     Type
@@ -20316,8 +20316,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19607                           ; Regs used in _BMA253_NewAccelDataRdyY: [wreg-fsr1h+status,2+status,0+pclath+cstack]
  19608                           
  19609                           
- 19610                           ;mcc_generated_files/application/BMA253_accel.c: 154:     _Bool yNewData;;mcc_generated_
-      +                          files/application/BMA253_accel.c: 156:     yNewData = (i2c_read1ByteRegister((0x19), (0x
+ 19610                           ;mcc_generated_files/application/BMA253_accel.c: 156:     _Bool yNewData;;mcc_generated_
+      +                          files/application/BMA253_accel.c: 158:     yNewData = (i2c_read1ByteRegister((0x19), (0x
       +                          04)) & (0x01));
  19611     0867  3004               	movlw	4
  19612     0868  0140               	movlb	0	; select bank0
@@ -20337,7 +20337,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19626     0875  00FB               	movwf	BMA253_NewAccelDataRdyY@yNewData
  19627     0876                     l8501:
  19628                           
- 19629                           ;mcc_generated_files/application/BMA253_accel.c: 158:     return yNewData;
+ 19629                           ;mcc_generated_files/application/BMA253_accel.c: 160:     return yNewData;
  19630     0876  087B               	movf	BMA253_NewAccelDataRdyY@yNewData,w
  19631     0877                     l54:
  19632     0877  0008               	return
@@ -20347,7 +20347,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19636     0CB6                     __ptext85:	
  19637 ;; *************** function _BMA253_GetAccelDataX *****************
  19638 ;; Defined at:
- 19639 ;;		line 81 in file "mcc_generated_files/application/BMA253_accel.c"
+ 19639 ;;		line 83 in file "mcc_generated_files/application/BMA253_accel.c"
  19640 ;; Parameters:    Size  Location     Type
  19641 ;;  xAccelData      1    wreg     PTR short 
  19642 ;;		 -> BMA253_GetAccelDataXYZ@sensorValue(2), 
@@ -20397,12 +20397,12 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19681     0CB7  00D4               	movwf	BMA253_GetAccelDataX@xAccelData
  19682     0CB8                     l8561:
  19683     0CB8                     l8563:	
- 19684                           ;mcc_generated_files/application/BMA253_accel.c: 82:     uint8_t lsbData;;mcc_generated_
-      +                          files/application/BMA253_accel.c: 83:     uint8_t msbData;;mcc_generated_files/applicati
-      +                          on/BMA253_accel.c: 84:     while (!BMA253_NewAccelDataRdyX()) {
+ 19684                           ;mcc_generated_files/application/BMA253_accel.c: 84:     uint8_t lsbData;;mcc_generated_
+      +                          files/application/BMA253_accel.c: 85:     uint8_t msbData;;mcc_generated_files/applicati
+      +                          on/BMA253_accel.c: 86:     while (!BMA253_NewAccelDataRdyX()) {
  19685                           
  19686                           
- 19687                           ;mcc_generated_files/application/BMA253_accel.c: 84:     while (!BMA253_NewAccelDataRdyX
+ 19687                           ;mcc_generated_files/application/BMA253_accel.c: 86:     while (!BMA253_NewAccelDataRdyX
       +                          ()) {
  19688     0CB8  3188  2056  318C   	fcall	_BMA253_NewAccelDataRdyX
  19689     0CBB  3A00               	xorlw	0
@@ -20414,7 +20414,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19695     0CC0                     u4670:
  19696     0CC0                     l8565:
  19697                           
- 19698                           ;mcc_generated_files/application/BMA253_accel.c: 88:     lsbData = i2c_read1ByteRegister
+ 19698                           ;mcc_generated_files/application/BMA253_accel.c: 90:     lsbData = i2c_read1ByteRegister
       +                          ((0x19), (0x02));
  19699     0CC0  3002               	movlw	2
  19700     0CC1  0140               	movlb	0	; select bank0
@@ -20424,7 +20424,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19704     0CC7  0140               	movlb	0	; select bank0
  19705     0CC8  00D5               	movwf	BMA253_GetAccelDataX@lsbData
  19706                           
- 19707                           ;mcc_generated_files/application/BMA253_accel.c: 89:     msbData = i2c_read1ByteRegister
+ 19707                           ;mcc_generated_files/application/BMA253_accel.c: 91:     msbData = i2c_read1ByteRegister
       +                          ((0x19), (0x03));
  19708     0CC9  3003               	movlw	3
  19709     0CCA  00CB               	movwf	i2c_read1ByteRegister@reg
@@ -20434,7 +20434,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19713     0CD0  00D6               	movwf	BMA253_GetAccelDataX@msbData
  19714     0CD1                     l8567:
  19715                           
- 19716                           ;mcc_generated_files/application/BMA253_accel.c: 90:     *xAccelData = ((((int16_t) msbD
+ 19716                           ;mcc_generated_files/application/BMA253_accel.c: 92:     *xAccelData = ((((int16_t) msbD
       +                          ata) << 8) | (lsbData)) >> 4;
  19717     0CD1  0856               	movf	BMA253_GetAccelDataX@msbData,w
  19718     0CD2  00D2               	movwf	??_BMA253_GetAccelDataX+1
@@ -20463,7 +20463,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19741     0856                     __ptext86:	
  19742 ;; *************** function _BMA253_NewAccelDataRdyX *****************
  19743 ;; Defined at:
- 19744 ;;		line 145 in file "mcc_generated_files/application/BMA253_accel.c"
+ 19744 ;;		line 147 in file "mcc_generated_files/application/BMA253_accel.c"
  19745 ;; Parameters:    Size  Location     Type
  19746 ;;		None
  19747 ;; Auto vars:     Size  Location     Type
@@ -20505,8 +20505,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19778                           ; Regs used in _BMA253_NewAccelDataRdyX: [wreg-fsr1h+status,2+status,0+pclath+cstack]
  19779                           
  19780                           
- 19781                           ;mcc_generated_files/application/BMA253_accel.c: 146:     _Bool xNewData;;mcc_generated_
-      +                          files/application/BMA253_accel.c: 148:     xNewData = (i2c_read1ByteRegister((0x19), (0x
+ 19781                           ;mcc_generated_files/application/BMA253_accel.c: 148:     _Bool xNewData;;mcc_generated_
+      +                          files/application/BMA253_accel.c: 150:     xNewData = (i2c_read1ByteRegister((0x19), (0x
       +                          02)) & (0x01));
  19782     0856  3002               	movlw	2
  19783     0857  0140               	movlb	0	; select bank0
@@ -20526,7 +20526,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19797     0864  00FB               	movwf	BMA253_NewAccelDataRdyX@xNewData
  19798     0865                     l8495:
  19799                           
- 19800                           ;mcc_generated_files/application/BMA253_accel.c: 150:     return xNewData;
+ 19800                           ;mcc_generated_files/application/BMA253_accel.c: 152:     return xNewData;
  19801     0865  087B               	movf	BMA253_NewAccelDataRdyX@xNewData,w
  19802     0866                     l51:
  19803     0866  0008               	return
@@ -20607,29 +20607,29 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
  19870     0EB2  3019               	movlw	25
  19871     0EB3  318D  259C  318E   	fcall	_i2c_write1ByteRegister
  19872                           
- 19873                           ;mcc_generated_files/application/BMA253_accel.c: 74:     i2c_write1ByteRegister((0x19), 
-      +                          (0x17), 0b00000100);
- 19874     0EB6  3017               	movlw	23
+ 19873                           ;mcc_generated_files/application/BMA253_accel.c: 76:     i2c_write1ByteRegister((0x19), 
+      +                          0x16, 0b10000000);
+ 19874     0EB6  3016               	movlw	22
  19875     0EB7  0140               	movlb	0	; select bank0
  19876     0EB8  00CB               	movwf	i2c_write1ByteRegister@reg
- 19877     0EB9  3004               	movlw	4
+ 19877     0EB9  3080               	movlw	128
  19878     0EBA  00CC               	movwf	i2c_write1ByteRegister@data
  19879     0EBB  3019               	movlw	25
  19880     0EBC  318D  259C  318E   	fcall	_i2c_write1ByteRegister
  19881                           
- 19882                           ;mcc_generated_files/application/BMA253_accel.c: 75:     i2c_write1ByteRegister((0x19), 
-      +                          (0x19), 0b00000010);
+ 19882                           ;mcc_generated_files/application/BMA253_accel.c: 77:     i2c_write1ByteRegister((0x19), 
+      +                          (0x19), 0b10000000);
  19883     0EBF  3019               	movlw	25
  19884     0EC0  0140               	movlb	0	; select bank0
  19885     0EC1  00CB               	movwf	i2c_write1ByteRegister@reg
- 19886     0EC2  3002               	movlw	2
+ 19886     0EC2  3080               	movlw	128
  19887     0EC3  00CC               	movwf	i2c_write1ByteRegister@data
  19888     0EC4  3019               	movlw	25
  19889     0EC5  318D  259C  318E   	fcall	_i2c_write1ByteRegister
  19890                           
- 19891                           ;mcc_generated_files/application/BMA253_accel.c: 77:     rad=i2c_read1ByteRegister((0x19
-      +                          ),(0x19));
- 19892     0EC8  3019               	movlw	25
+ 19891                           ;mcc_generated_files/application/BMA253_accel.c: 79:     rad=i2c_read1ByteRegister((0x19
+      +                          ),0x16);
+ 19892     0EC8  3016               	movlw	22
  19893     0EC9  0140               	movlb	0	; select bank0
  19894     0ECA  00CB               	movwf	i2c_read1ByteRegister@reg
  19895     0ECB  3019               	movlw	25
@@ -28909,7 +28909,7 @@ SFR63                0      0       0      64        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                   Sat Dec 28 16:12:23 2024
+Symbol Table                                                                                   Mon Dec 30 10:13:30 2024
 
                                  _eusart1TxBufferRemaining 0033  
                                    ?_EUSART2_RxDataHandler 0070  

@@ -395,10 +395,12 @@ void BMA253_Initialize(void) {
     i2c_write1ByteRegister((0x19), (0x11), (0x00));
     i2c_write1ByteRegister((0x19), (0x10), (0x08));
     i2c_write1ByteRegister((0x19), (0x0F), (0x03));
-    i2c_write1ByteRegister((0x19), (0x17), 0b00000100);
-    i2c_write1ByteRegister((0x19), (0x19), 0b00000010);
 
-    rad=i2c_read1ByteRegister((0x19),(0x19));
+
+    i2c_write1ByteRegister((0x19), 0x16, 0b10000000);
+    i2c_write1ByteRegister((0x19), (0x19), 0b10000000);
+
+    rad=i2c_read1ByteRegister((0x19),0x16);
 
 }
 

@@ -71,10 +71,12 @@ void BMA253_Initialize(void) {
     i2c_write1ByteRegister(BMA253_ADDR, BMA253_PWR_MODE_ADDR, BMA253_NORMAL_MODE);
     i2c_write1ByteRegister(BMA253_ADDR, BMA253_BW_SELECT_ADDR, BMA253_BW_7_81HZ);
     i2c_write1ByteRegister(BMA253_ADDR, BMA253_RANGE_ADDR, BMA253_2G_RANGE);
-    i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT_EN_1_ADDR, 0b00000100);
-    i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT1_PIN_ADDR, 0b00000010);
+ //   i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT_EN_1_ADDR, 0b00000100);
+ //   i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT1_PIN_ADDR, 0b00000010);
+    i2c_write1ByteRegister(BMA253_ADDR, 0x16, 0b10000000);
+    i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT1_PIN_ADDR, 0b10000000);
 //    i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT_DATA_ADDR, 0b00000001);
-    rad=i2c_read1ByteRegister(BMA253_ADDR,BMA253_INT1_PIN_ADDR);
+    rad=i2c_read1ByteRegister(BMA253_ADDR,0x16);
 //    rad=i2c_read1ByteRegister(BMA253_ADDR,BMA253_INT_DATA_ADDR);    
 }
 

@@ -207,7 +207,7 @@ stringtext10 STRCODE 0 1800 1800 C 2 1
 stringtext11 STRCODE 0 1817 1817 B 2 1
 stringtext12 STRCODE 0 1822 1822 6 2 1
 config CONFIG 4 8007 8007 5 2 1
-$C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+$C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 idloc IDLOC 5 8000 8000 4 2 1
 stack STACK 2 2230 2230 5C0 1 1
 reset_vec CODE 0 0 0 2 2 1
@@ -352,69 +352,69 @@ STRING 1836-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-57 cinit CODE >19016:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-57 cinit CODE >19019:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-57 cinit CODE >19210:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-5A cinit CODE >19211:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-5B cinit CODE >19212:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-5E cinit CODE >19213:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-5F cinit CODE >19217:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-60 cinit CODE >19218:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-61 cinit CODE >19219:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-62 cinit CODE >19220:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-63 cinit CODE >19221:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-64 cinit CODE >19222:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-65 cinit CODE >19223:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-66 cinit CODE >19224:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-67 cinit CODE >19225:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-68 cinit CODE >19226:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-6B cinit CODE >19243:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-6C cinit CODE >19247:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-6D cinit CODE >19248:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-6E cinit CODE >19249:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-6F cinit CODE >19250:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-70 cinit CODE >19251:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-71 cinit CODE >19252:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-74 cinit CODE >19256:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-75 cinit CODE >19257:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-76 cinit CODE >19258:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-77 cinit CODE >19259:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-78 cinit CODE >19260:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-79 cinit CODE >19261:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-7C cinit CODE >19265:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-7D cinit CODE >19266:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-7E cinit CODE >19267:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-7F cinit CODE >19268:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-80 cinit CODE >19269:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-81 cinit CODE >19270:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-84 cinit CODE >19274:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-85 cinit CODE >19275:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-86 cinit CODE >19276:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-87 cinit CODE >19277:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-88 cinit CODE >19278:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-89 cinit CODE >19279:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-8C cinit CODE >19283:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-8D cinit CODE >19284:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-8E cinit CODE >19285:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-8F cinit CODE >19286:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-90 cinit CODE >19287:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-91 cinit CODE >19288:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-94 cinit CODE >19292:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-95 cinit CODE >19293:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-96 cinit CODE >19294:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-97 cinit CODE >19295:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-98 cinit CODE >19296:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-99 cinit CODE >19297:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-9C cinit CODE >19301:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-9D cinit CODE >19302:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-9E cinit CODE >19303:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-9F cinit CODE >19304:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-A0 cinit CODE >19305:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-A1 cinit CODE >19306:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-A4 cinit CODE >19312:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-A4 cinit CODE >19314:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-A5 cinit CODE >19315:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-A6 cinit CODE >19316:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
+57 cinit CODE >19016:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+57 cinit CODE >19019:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+57 cinit CODE >19210:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+5A cinit CODE >19211:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+5B cinit CODE >19212:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+5E cinit CODE >19213:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+5F cinit CODE >19217:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+60 cinit CODE >19218:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+61 cinit CODE >19219:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+62 cinit CODE >19220:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+63 cinit CODE >19221:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+64 cinit CODE >19222:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+65 cinit CODE >19223:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+66 cinit CODE >19224:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+67 cinit CODE >19225:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+68 cinit CODE >19226:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+6B cinit CODE >19243:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+6C cinit CODE >19247:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+6D cinit CODE >19248:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+6E cinit CODE >19249:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+6F cinit CODE >19250:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+70 cinit CODE >19251:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+71 cinit CODE >19252:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+74 cinit CODE >19256:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+75 cinit CODE >19257:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+76 cinit CODE >19258:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+77 cinit CODE >19259:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+78 cinit CODE >19260:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+79 cinit CODE >19261:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+7C cinit CODE >19265:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+7D cinit CODE >19266:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+7E cinit CODE >19267:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+7F cinit CODE >19268:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+80 cinit CODE >19269:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+81 cinit CODE >19270:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+84 cinit CODE >19274:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+85 cinit CODE >19275:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+86 cinit CODE >19276:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+87 cinit CODE >19277:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+88 cinit CODE >19278:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+89 cinit CODE >19279:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+8C cinit CODE >19283:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+8D cinit CODE >19284:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+8E cinit CODE >19285:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+8F cinit CODE >19286:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+90 cinit CODE >19287:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+91 cinit CODE >19288:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+94 cinit CODE >19292:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+95 cinit CODE >19293:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+96 cinit CODE >19294:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+97 cinit CODE >19295:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+98 cinit CODE >19296:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+99 cinit CODE >19297:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+9C cinit CODE >19301:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+9D cinit CODE >19302:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+9E cinit CODE >19303:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+9F cinit CODE >19304:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+A0 cinit CODE >19305:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+A1 cinit CODE >19306:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+A4 cinit CODE >19312:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+A4 cinit CODE >19314:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+A5 cinit CODE >19315:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+A6 cinit CODE >19316:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
 4 intentry CODE >52:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/interrupt_manager.c
 F intentry CODE >57:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/interrupt_manager.c
@@ -864,57 +864,57 @@ E9C text87 CODE >70:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\
 E9C text87 CODE >71:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
 EA4 text87 CODE >72:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
 EAD text87 CODE >73:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-EB6 text87 CODE >74:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-EBF text87 CODE >75:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-EC8 text87 CODE >77:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-ED1 text87 CODE >79:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-856 text86 CODE >145:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-856 text86 CODE >148:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-865 text86 CODE >150:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-866 text86 CODE >151:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CB6 text85 CODE >81:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CB8 text85 CODE >84:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CBC text85 CODE >84:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CC0 text85 CODE >88:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CC9 text85 CODE >89:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CD1 text85 CODE >90:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CE3 text85 CODE >91:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-867 text84 CODE >153:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-867 text84 CODE >156:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-876 text84 CODE >158:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-877 text84 CODE >159:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CE4 text83 CODE >93:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CE6 text83 CODE >96:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CEA text83 CODE >96:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CEE text83 CODE >100:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CF7 text83 CODE >101:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-CFF text83 CODE >102:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-D11 text83 CODE >103:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-878 text82 CODE >161:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-878 text82 CODE >164:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-887 text82 CODE >166:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-888 text82 CODE >167:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-D12 text81 CODE >105:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-D14 text81 CODE >108:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-D18 text81 CODE >108:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-D1C text81 CODE >112:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-D25 text81 CODE >113:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-D2D text81 CODE >114:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-D3F text81 CODE >115:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FBF text80 CODE >117:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FC1 text80 CODE >119:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FC5 text80 CODE >119:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FC9 text80 CODE >123:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FCD text80 CODE >124:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FD5 text80 CODE >126:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FD9 text80 CODE >126:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FDD text80 CODE >130:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FE1 text80 CODE >131:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FEA text80 CODE >133:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FEE text80 CODE >133:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FF2 text80 CODE >137:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FF6 text80 CODE >138:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
-FFF text80 CODE >139:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+EB6 text87 CODE >76:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+EBF text87 CODE >77:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+EC8 text87 CODE >79:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+ED1 text87 CODE >81:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+856 text86 CODE >147:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+856 text86 CODE >150:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+865 text86 CODE >152:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+866 text86 CODE >153:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CB6 text85 CODE >83:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CB8 text85 CODE >86:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CBC text85 CODE >86:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CC0 text85 CODE >90:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CC9 text85 CODE >91:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CD1 text85 CODE >92:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CE3 text85 CODE >93:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+867 text84 CODE >155:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+867 text84 CODE >158:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+876 text84 CODE >160:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+877 text84 CODE >161:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CE4 text83 CODE >95:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CE6 text83 CODE >98:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CEA text83 CODE >98:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CEE text83 CODE >102:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CF7 text83 CODE >103:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+CFF text83 CODE >104:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+D11 text83 CODE >105:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+878 text82 CODE >163:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+878 text82 CODE >166:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+887 text82 CODE >168:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+888 text82 CODE >169:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+D12 text81 CODE >107:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+D14 text81 CODE >110:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+D18 text81 CODE >110:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+D1C text81 CODE >114:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+D25 text81 CODE >115:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+D2D text81 CODE >116:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+D3F text81 CODE >117:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FBF text80 CODE >119:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FC1 text80 CODE >121:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FC5 text80 CODE >121:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FC9 text80 CODE >125:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FCD text80 CODE >126:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FD5 text80 CODE >128:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FD9 text80 CODE >128:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FDD text80 CODE >132:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FE1 text80 CODE >133:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FEA text80 CODE >135:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FEE text80 CODE >135:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FF2 text80 CODE >139:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FF6 text80 CODE >140:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
+FFF text80 CODE >141:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/application/BMA253_accel.c
 B92 text79 CODE >173:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/eusart2.c
 B92 text79 CODE >175:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/eusart2.c
 B98 text79 CODE >179:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\mcc_generated_files/eusart2.c
@@ -1637,22 +1637,22 @@ FE maintext CODE >117:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchi
 165 maintext CODE >142:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\main.c
 178 maintext CODE >140:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\main.c
 182 maintext CODE >140:C:\Users\jjega\OneDrive\Documents\GitHub\original_microchip\pic-lightblue-explorer-demo\PIC_LIGHTBLUE_EXPLORER_DEMO.X\main.c
-1698 clrtext CODE >19232:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-1698 clrtext CODE >19233:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-1699 clrtext CODE >19234:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-1699 clrtext CODE >19235:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-169A clrtext CODE >19236:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-169B clrtext CODE >19237:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-169C clrtext CODE >19238:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-169D clrtext CODE >19239:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-169E inittext CODE >19199:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-169E inittext CODE >19200:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-169F inittext CODE >19201:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-169F inittext CODE >19202:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-16A0 inittext CODE >19203:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-16A1 inittext CODE >19204:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-16A2 inittext CODE >19205:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
-16A3 inittext CODE >19206:C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_1.s
+1698 clrtext CODE >19232:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+1698 clrtext CODE >19233:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+1699 clrtext CODE >19234:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+1699 clrtext CODE >19235:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+169A clrtext CODE >19236:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+169B clrtext CODE >19237:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+169C clrtext CODE >19238:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+169D clrtext CODE >19239:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+169E inittext CODE >19199:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+169E inittext CODE >19200:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+169F inittext CODE >19201:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+169F inittext CODE >19202:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+16A0 inittext CODE >19203:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+16A1 inittext CODE >19204:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+16A2 inittext CODE >19205:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
+16A3 inittext CODE >19206:C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1722,18 +1722,18 @@ _WPUA 1F39 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _WPUB 1F44 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _WPUC 1F4F 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _WPUE 1F65 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-___sp 2230 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+___sp 2230 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 __hex 158 0 BANK2 1 dataBANK2 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _main 150 0 CODE 0 maintext dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _peek 3E 0 BANK0 1 bssBANK0 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _uart 2000 0 STRCODE 0 stringtext1 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 __end_of_RN487X_is_rx_ready 2E0C 0 CODE 0 text36 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 btemp 7E 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-___stack_hi 2510 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-___stack_lo 2230 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+___stack_hi 2510 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+___stack_lo 2230 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 ?_i2c_read2ByteRegister 4B 0 BANK0 1 cstackBANK0 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 BMA253_GetAccelDataXYZ@accelData 57 0 BANK0 1 cstackBANK0 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-start AA 0 CODE 0 init C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+start AA 0 CODE 0 init C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 _LIGHTBLUE_SendProtocolVersion 1BFA 0 CODE 0 text47 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 EUSART2_SetOverrunErrorHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _do_I2C_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
@@ -1781,12 +1781,12 @@ __end_of_EUSART2_DefaultOverrunErrorHandler 2BC6 0 CODE 0 text152 dist/default/d
 __end_of_I2C1_MasterStartRx 2B94 0 CODE 0 text120 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _RN487X_DataReady 142A 0 CODE 0 text23 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _LIGHTBLUE_AccelSensor 1A80 0 CODE 0 text72 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 __ptext100 2C3E 0 CODE 0 text100 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 __ptext101 2C34 0 CODE 0 text101 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 __ptext102 2C2A 0 CODE 0 text102 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
@@ -1926,8 +1926,8 @@ _LIGHTBLUE_SendSerialData 4AA 0 CODE 0 text46 dist/default/debug\PIC_LIGHTBLUE_E
 ?_strchr 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 ?_strlen 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 ?_strstr 78 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-___stackhi 27EF 0 ABS 0 - C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-___stacklo 2230 0 ABS 0 - C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+___stackhi 27EF 0 ABS 0 - C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+___stacklo 2230 0 ABS 0 - C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 _rn487x_PrintMessageEnd B9E 0 CODE 0 text30 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _RN487X_EnterDataMode 13BC 0 CODE 0 text56 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _do_I2C_SEND_ADR_READ 0 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
@@ -2017,7 +2017,7 @@ LIGHTBLUE_SendProtocolVersion@value 5C 0 BANK0 1 cstackBANK0 dist/default/debug\
 _I2C1_Status A0 0 BANK1 1 bssBANK1 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 EUSART2_Write@txData 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _EUSART2_RxDataHandler 1234 0 CODE 0 text155 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-___int_sp 2510 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+___int_sp 2510 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 BMA253_GetAccelDataY@msbData 56 0 BANK0 1 cstackBANK0 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 wr2RegCompleteHandler@p 78 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _EUSART1_Write 1772 0 CODE 0 text78 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
@@ -2360,7 +2360,7 @@ _EUSART2_RxDefaultInterruptHandler 154 0 BANK2 1 nvBANK2 dist/default/debug\PIC_
 strchr@c 73 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 strchr@s 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 strcpy@d 75 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 strlen@a 74 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 strlen@s 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 strstr@h 78 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
@@ -2779,8 +2779,8 @@ _i2c_status 120 0 BANK2 1 bssBANK2 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEM
 _SLRCONA 1F3B 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _SLRCONB 1F46 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _SLRCONC 1F51 0 ABS 0 - dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-___heap_hi 0 0 ABS 0 - C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-___heap_lo 0 0 ABS 0 - C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+___heap_hi 0 0 ABS 0 - C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+___heap_lo 0 0 ABS 0 - C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 __end_of_I2C1_MasterStart 2B82 0 CODE 0 text138 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 __end_of_I2C1_MasterWrite 2C5C 0 CODE 0 text93 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 _asyncBuffer 24 0 BANK0 1 bssBANK0 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
@@ -2914,8 +2914,8 @@ __end_of_rn487x_PrintMessageStart 196C 0 CODE 0 text29 dist/default/debug\PIC_LI
 __end_of_rd1RegCompleteHandler@i2c1_master_example$F1205 1068 0 CODE 0 text126 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 __end_of_I2C1_MasterSendAck 2BDE 0 CODE 0 text117 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 EUSART1_SetOverrunErrorHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
-___int_stack_hi 27F0 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
-___int_stack_lo 2510 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAs60c.\driver_tmp_15.o
+___int_stack_hi 27F0 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
+___int_stack_lo 2510 0 STACK 2 stack C:\Users\jjega\AppData\Local\Temp\xcAse04.\driver_tmp_15.o
 _OSCILLATOR_Initialize 2E0C 0 CODE 0 text7 dist/default/debug\PIC_LIGHTBLUE_EXPLORER_DEMO.X.debug.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
