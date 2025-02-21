@@ -94,11 +94,11 @@ int main(void) {
             if (TIMER_FLAG_SET() == true) {
                 RESET_TIMER_INTERRUPT_FLAG;
 
-                LIGHTBLUE_TemperatureSensor();
-                LIGHTBLUE_AccelSensor();
-                LIGHTBLUE_PushButton();
-                LIGHTBLUE_LedState();
-                LIGHTBLUE_SendProtocolVersion();
+//                LIGHTBLUE_TemperatureSensor();
+//                LIGHTBLUE_AccelSensor();
+//                LIGHTBLUE_PushButton();
+//                LIGHTBLUE_LedState();
+//                LIGHTBLUE_SendProtocolVersion();
             } else {
                 while (RN487X_DataReady()) {
                     LIGHTBLUE_ParseIncomingPacket(RN487X_Read());
