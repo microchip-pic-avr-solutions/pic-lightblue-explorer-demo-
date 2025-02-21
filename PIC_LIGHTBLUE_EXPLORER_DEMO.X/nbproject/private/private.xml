@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/application/BMA253_accel.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/interrupt_manager.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/pin_manager.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/main.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/tmr0.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/rn487x/rn487x_interface.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/examples/i2c1_master_example.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/drivers/i2c_simple_master.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/i2c1_master.h</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/application/BMA253_accel.h</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/interrupt_manager.h</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/eusart2.h</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/rn487x/rn487x.h</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/eusart1.c</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/i2c1_driver.h</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/rn487x/rn487x_interface.h</file>
+            <file>file:/C:/Users/jjega/OneDrive/Documents/GitHub/original_microchip/pic-lightblue-explorer-demo/PIC_LIGHTBLUE_EXPLORER_DEMO.X/mcc_generated_files/pin_manager.h</file>
+        </group>
+    </open-files>
+</project-private>

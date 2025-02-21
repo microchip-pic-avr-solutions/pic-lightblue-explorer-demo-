@@ -154,6 +154,7 @@ void PIN_MANAGER_IOC(void)
 void IOCAF6_ISR(void) {
 
     // Add custom IOCAF6 code
+    ACC_INTERRUPT_SetHigh();
 
     // Call the interrupt handler for the callback registered at runtime
     if(IOCAF6_InterruptHandler)

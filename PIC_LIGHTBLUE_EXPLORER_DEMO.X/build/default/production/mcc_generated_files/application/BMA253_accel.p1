@@ -1,0 +1,324 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"285 mcc_generated_files/application/BMA253_accel.h
+[; ;mcc_generated_files/application/BMA253_accel.h: 285:     struct {
+[s S3 :7 `uc 1 :1 `uc 1 ]
+[n S3 . UNDEFINED FLAT ]
+"284
+[; ;mcc_generated_files/application/BMA253_accel.h: 284: typedef union {
+[u S2 `S3 1 `uc 1 ]
+[n S2 . . AccelerometerInterruptBits ]
+"39 mcc_generated_files/application/../drivers/i2c_simple_master.h
+[; ;mcc_generated_files/application/../drivers/i2c_simple_master.h: 39: void i2c_write1ByteRegister(i2c1_address_t address, uint8_t reg, uint8_t data);
+[v _i2c_write1ByteRegister `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"37
+[; ;mcc_generated_files/application/../drivers/i2c_simple_master.h: 37: uint8_t i2c_read1ByteRegister(i2c1_address_t address, uint8_t reg);
+[v _i2c_read1ByteRegister `(uc ~T0 @X0 0 ef2`uc`uc ]
+"46 mcc_generated_files/application/BMA253_accel.c
+[; ;mcc_generated_files/application/BMA253_accel.c: 46: static _Bool BMA253_NewAccelDataRdyX(void);
+[v _BMA253_NewAccelDataRdyX `(a ~T0 @X0 0 sf ]
+"56
+[; ;mcc_generated_files/application/BMA253_accel.c: 56: static _Bool BMA253_NewAccelDataRdyY(void);
+[v _BMA253_NewAccelDataRdyY `(a ~T0 @X0 0 sf ]
+"66
+[; ;mcc_generated_files/application/BMA253_accel.c: 66: static _Bool BMA253_NewAccelDataRdyZ(void);
+[v _BMA253_NewAccelDataRdyZ `(a ~T0 @X0 0 sf ]
+"224 mcc_generated_files/application/BMA253_accel.h
+[; ;mcc_generated_files/application/BMA253_accel.h: 224: {
+[s S1 `s 1 `s 1 `s 1 ]
+[n S1 . x y z ]
+"291 mcc_generated_files/application/BMA253_accel.h
+[; ;mcc_generated_files/application/BMA253_accel.h: 291: volatile AccelerometerInterruptBits_t accelerometerInterruptBits;
+[v _accelerometerInterruptBits `VS2 ~T0 @X0 1 e ]
+"68 mcc_generated_files/application/BMA253_accel.c
+[; ;mcc_generated_files/application/BMA253_accel.c: 68: uint8_t rad;
+[v _rad `uc ~T0 @X0 1 e ]
+"70
+[; ;mcc_generated_files/application/BMA253_accel.c: 70: void BMA253_Initialize(void) {
+[v _BMA253_Initialize `(v ~T0 @X0 1 ef ]
+{
+[e :U _BMA253_Initialize ]
+[f ]
+"71
+[; ;mcc_generated_files/application/BMA253_accel.c: 71:     i2c_write1ByteRegister((0x19), (0x11), (0x00));
+[e ( _i2c_write1ByteRegister (3 , , -> -> 25 `i `uc -> -> 17 `i `uc -> -> 0 `i `uc ]
+"72
+[; ;mcc_generated_files/application/BMA253_accel.c: 72:     i2c_write1ByteRegister((0x19), (0x10), (0x08));
+[e ( _i2c_write1ByteRegister (3 , , -> -> 25 `i `uc -> -> 16 `i `uc -> -> 8 `i `uc ]
+"73
+[; ;mcc_generated_files/application/BMA253_accel.c: 73:     i2c_write1ByteRegister((0x19), (0x0F), (0x03));
+[e ( _i2c_write1ByteRegister (3 , , -> -> 25 `i `uc -> -> 15 `i `uc -> -> 3 `i `uc ]
+"76
+[; ;mcc_generated_files/application/BMA253_accel.c: 76:     i2c_write1ByteRegister((0x19), 0x16, 0b10000000);
+[e ( _i2c_write1ByteRegister (3 , , -> -> 25 `i `uc -> -> 22 `i `uc -> -> 128 `i `uc ]
+"77
+[; ;mcc_generated_files/application/BMA253_accel.c: 77:     i2c_write1ByteRegister((0x19), (0x19), 0b10000000);
+[e ( _i2c_write1ByteRegister (3 , , -> -> 25 `i `uc -> -> 25 `i `uc -> -> 128 `i `uc ]
+"79
+[; ;mcc_generated_files/application/BMA253_accel.c: 79:     rad=i2c_read1ByteRegister((0x19),0x16);
+[e = _rad ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 22 `i `uc ]
+"81
+[; ;mcc_generated_files/application/BMA253_accel.c: 81: }
+[e :UE 6 ]
+}
+"83
+[; ;mcc_generated_files/application/BMA253_accel.c: 83: void BMA253_GetAccelDataX(int16_t *xAccelData) {
+[v _BMA253_GetAccelDataX `(v ~T0 @X0 1 ef1`*s ]
+{
+[e :U _BMA253_GetAccelDataX ]
+[v _xAccelData `*s ~T0 @X0 1 r1 ]
+[f ]
+"84
+[; ;mcc_generated_files/application/BMA253_accel.c: 84:     uint8_t lsbData;
+[v _lsbData `uc ~T0 @X0 1 a ]
+"85
+[; ;mcc_generated_files/application/BMA253_accel.c: 85:     uint8_t msbData;
+[v _msbData `uc ~T0 @X0 1 a ]
+"86
+[; ;mcc_generated_files/application/BMA253_accel.c: 86:     while (!BMA253_NewAccelDataRdyX()) {
+[e $U 8  ]
+[e :U 9 ]
+{
+"88
+[; ;mcc_generated_files/application/BMA253_accel.c: 88:     }
+}
+[e :U 8 ]
+"86
+[; ;mcc_generated_files/application/BMA253_accel.c: 86:     while (!BMA253_NewAccelDataRdyX()) {
+[e $ ! != -> ( _BMA253_NewAccelDataRdyX ..  `i -> 0 `i 9  ]
+[e :U 10 ]
+"90
+[; ;mcc_generated_files/application/BMA253_accel.c: 90:     lsbData = i2c_read1ByteRegister((0x19), (0x02));
+[e = _lsbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 2 `i `uc ]
+"91
+[; ;mcc_generated_files/application/BMA253_accel.c: 91:     msbData = i2c_read1ByteRegister((0x19), (0x03));
+[e = _msbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 3 `i `uc ]
+"92
+[; ;mcc_generated_files/application/BMA253_accel.c: 92:     *xAccelData = ((((int16_t) msbData) << 8) | (lsbData)) >> 4;
+[e = *U _xAccelData -> >> | << -> -> _msbData `s `i -> 8 `i -> _lsbData `i -> 4 `i `s ]
+"93
+[; ;mcc_generated_files/application/BMA253_accel.c: 93: }
+[e :UE 7 ]
+}
+"95
+[; ;mcc_generated_files/application/BMA253_accel.c: 95: void BMA253_GetAccelDataY(int16_t *yAccelData) {
+[v _BMA253_GetAccelDataY `(v ~T0 @X0 1 ef1`*s ]
+{
+[e :U _BMA253_GetAccelDataY ]
+[v _yAccelData `*s ~T0 @X0 1 r1 ]
+[f ]
+"96
+[; ;mcc_generated_files/application/BMA253_accel.c: 96:     uint8_t lsbData;
+[v _lsbData `uc ~T0 @X0 1 a ]
+"97
+[; ;mcc_generated_files/application/BMA253_accel.c: 97:     uint8_t msbData;
+[v _msbData `uc ~T0 @X0 1 a ]
+"98
+[; ;mcc_generated_files/application/BMA253_accel.c: 98:     while (!BMA253_NewAccelDataRdyY()) {
+[e $U 12  ]
+[e :U 13 ]
+{
+"100
+[; ;mcc_generated_files/application/BMA253_accel.c: 100:     }
+}
+[e :U 12 ]
+"98
+[; ;mcc_generated_files/application/BMA253_accel.c: 98:     while (!BMA253_NewAccelDataRdyY()) {
+[e $ ! != -> ( _BMA253_NewAccelDataRdyY ..  `i -> 0 `i 13  ]
+[e :U 14 ]
+"102
+[; ;mcc_generated_files/application/BMA253_accel.c: 102:     lsbData = i2c_read1ByteRegister((0x19), (0x04));
+[e = _lsbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 4 `i `uc ]
+"103
+[; ;mcc_generated_files/application/BMA253_accel.c: 103:     msbData = i2c_read1ByteRegister((0x19), (0x05));
+[e = _msbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 5 `i `uc ]
+"104
+[; ;mcc_generated_files/application/BMA253_accel.c: 104:     *yAccelData = ((((int16_t) msbData) << 8) | (lsbData)) >> 4;
+[e = *U _yAccelData -> >> | << -> -> _msbData `s `i -> 8 `i -> _lsbData `i -> 4 `i `s ]
+"105
+[; ;mcc_generated_files/application/BMA253_accel.c: 105: }
+[e :UE 11 ]
+}
+"107
+[; ;mcc_generated_files/application/BMA253_accel.c: 107: void BMA253_GetAccelDataZ(int16_t *zAccelData) {
+[v _BMA253_GetAccelDataZ `(v ~T0 @X0 1 ef1`*s ]
+{
+[e :U _BMA253_GetAccelDataZ ]
+[v _zAccelData `*s ~T0 @X0 1 r1 ]
+[f ]
+"108
+[; ;mcc_generated_files/application/BMA253_accel.c: 108:     uint8_t lsbData;
+[v _lsbData `uc ~T0 @X0 1 a ]
+"109
+[; ;mcc_generated_files/application/BMA253_accel.c: 109:     uint8_t msbData;
+[v _msbData `uc ~T0 @X0 1 a ]
+"110
+[; ;mcc_generated_files/application/BMA253_accel.c: 110:     while (!BMA253_NewAccelDataRdyZ()) {
+[e $U 16  ]
+[e :U 17 ]
+{
+"112
+[; ;mcc_generated_files/application/BMA253_accel.c: 112:     }
+}
+[e :U 16 ]
+"110
+[; ;mcc_generated_files/application/BMA253_accel.c: 110:     while (!BMA253_NewAccelDataRdyZ()) {
+[e $ ! != -> ( _BMA253_NewAccelDataRdyZ ..  `i -> 0 `i 17  ]
+[e :U 18 ]
+"114
+[; ;mcc_generated_files/application/BMA253_accel.c: 114:     lsbData = i2c_read1ByteRegister((0x19), (0x06));
+[e = _lsbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 6 `i `uc ]
+"115
+[; ;mcc_generated_files/application/BMA253_accel.c: 115:     msbData = i2c_read1ByteRegister((0x19), (0x07));
+[e = _msbData ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 7 `i `uc ]
+"116
+[; ;mcc_generated_files/application/BMA253_accel.c: 116:     *zAccelData = ((((int16_t) msbData) << 8) | (lsbData)) >> 4;
+[e = *U _zAccelData -> >> | << -> -> _msbData `s `i -> 8 `i -> _lsbData `i -> 4 `i `s ]
+"117
+[; ;mcc_generated_files/application/BMA253_accel.c: 117: }
+[e :UE 15 ]
+}
+"119
+[; ;mcc_generated_files/application/BMA253_accel.c: 119: void BMA253_GetAccelDataXYZ(BMA253_ACCEL_DATA_t *accelData) {
+[v _BMA253_GetAccelDataXYZ `(v ~T0 @X0 1 ef1`*S1 ]
+{
+[e :U _BMA253_GetAccelDataXYZ ]
+[v _accelData `*S1 ~T0 @X0 1 r1 ]
+[f ]
+"120
+[; ;mcc_generated_files/application/BMA253_accel.c: 120:     int16_t sensorValue;
+[v _sensorValue `s ~T0 @X0 1 a ]
+"121
+[; ;mcc_generated_files/application/BMA253_accel.c: 121:     while (!BMA253_NewAccelDataRdyX()) {
+[e $U 20  ]
+[e :U 21 ]
+{
+"123
+[; ;mcc_generated_files/application/BMA253_accel.c: 123:     }
+}
+[e :U 20 ]
+"121
+[; ;mcc_generated_files/application/BMA253_accel.c: 121:     while (!BMA253_NewAccelDataRdyX()) {
+[e $ ! != -> ( _BMA253_NewAccelDataRdyX ..  `i -> 0 `i 21  ]
+[e :U 22 ]
+"125
+[; ;mcc_generated_files/application/BMA253_accel.c: 125:     BMA253_GetAccelDataX(&sensorValue);
+[e ( _BMA253_GetAccelDataX (1 &U _sensorValue ]
+"126
+[; ;mcc_generated_files/application/BMA253_accel.c: 126:     accelData->x = sensorValue;
+[e = . *U _accelData 0 _sensorValue ]
+"128
+[; ;mcc_generated_files/application/BMA253_accel.c: 128:     while (!BMA253_NewAccelDataRdyY()) {
+[e $U 23  ]
+[e :U 24 ]
+{
+"130
+[; ;mcc_generated_files/application/BMA253_accel.c: 130:     }
+}
+[e :U 23 ]
+"128
+[; ;mcc_generated_files/application/BMA253_accel.c: 128:     while (!BMA253_NewAccelDataRdyY()) {
+[e $ ! != -> ( _BMA253_NewAccelDataRdyY ..  `i -> 0 `i 24  ]
+[e :U 25 ]
+"132
+[; ;mcc_generated_files/application/BMA253_accel.c: 132:     BMA253_GetAccelDataY(&sensorValue);
+[e ( _BMA253_GetAccelDataY (1 &U _sensorValue ]
+"133
+[; ;mcc_generated_files/application/BMA253_accel.c: 133:     accelData->y = sensorValue;
+[e = . *U _accelData 1 _sensorValue ]
+"135
+[; ;mcc_generated_files/application/BMA253_accel.c: 135:     while (!BMA253_NewAccelDataRdyZ()) {
+[e $U 26  ]
+[e :U 27 ]
+{
+"137
+[; ;mcc_generated_files/application/BMA253_accel.c: 137:     }
+}
+[e :U 26 ]
+"135
+[; ;mcc_generated_files/application/BMA253_accel.c: 135:     while (!BMA253_NewAccelDataRdyZ()) {
+[e $ ! != -> ( _BMA253_NewAccelDataRdyZ ..  `i -> 0 `i 27  ]
+[e :U 28 ]
+"139
+[; ;mcc_generated_files/application/BMA253_accel.c: 139:     BMA253_GetAccelDataZ(&sensorValue);
+[e ( _BMA253_GetAccelDataZ (1 &U _sensorValue ]
+"140
+[; ;mcc_generated_files/application/BMA253_accel.c: 140:     accelData->z = sensorValue;
+[e = . *U _accelData 2 _sensorValue ]
+"141
+[; ;mcc_generated_files/application/BMA253_accel.c: 141: }
+[e :UE 19 ]
+}
+"143
+[; ;mcc_generated_files/application/BMA253_accel.c: 143: uint8_t BMA253_GetAccelChipId(void) {
+[v _BMA253_GetAccelChipId `(uc ~T0 @X0 1 ef ]
+{
+[e :U _BMA253_GetAccelChipId ]
+[f ]
+"144
+[; ;mcc_generated_files/application/BMA253_accel.c: 144:     return i2c_read1ByteRegister((0x19), (0x00));
+[e ) ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 0 `i `uc ]
+[e $UE 29  ]
+"145
+[; ;mcc_generated_files/application/BMA253_accel.c: 145: }
+[e :UE 29 ]
+}
+"147
+[; ;mcc_generated_files/application/BMA253_accel.c: 147: static _Bool BMA253_NewAccelDataRdyX(void) {
+[v _BMA253_NewAccelDataRdyX `(a ~T0 @X0 1 sf ]
+{
+[e :U _BMA253_NewAccelDataRdyX ]
+[f ]
+"148
+[; ;mcc_generated_files/application/BMA253_accel.c: 148:     _Bool xNewData;
+[v _xNewData `a ~T0 @X0 1 a ]
+"150
+[; ;mcc_generated_files/application/BMA253_accel.c: 150:     xNewData = (i2c_read1ByteRegister((0x19), (0x02)) & (0x01));
+[e = _xNewData -> & -> ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 2 `i `uc `i -> 1 `i `a ]
+"152
+[; ;mcc_generated_files/application/BMA253_accel.c: 152:     return xNewData;
+[e ) _xNewData ]
+[e $UE 30  ]
+"153
+[; ;mcc_generated_files/application/BMA253_accel.c: 153: }
+[e :UE 30 ]
+}
+"155
+[; ;mcc_generated_files/application/BMA253_accel.c: 155: static _Bool BMA253_NewAccelDataRdyY(void) {
+[v _BMA253_NewAccelDataRdyY `(a ~T0 @X0 1 sf ]
+{
+[e :U _BMA253_NewAccelDataRdyY ]
+[f ]
+"156
+[; ;mcc_generated_files/application/BMA253_accel.c: 156:     _Bool yNewData;
+[v _yNewData `a ~T0 @X0 1 a ]
+"158
+[; ;mcc_generated_files/application/BMA253_accel.c: 158:     yNewData = (i2c_read1ByteRegister((0x19), (0x04)) & (0x01));
+[e = _yNewData -> & -> ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 4 `i `uc `i -> 1 `i `a ]
+"160
+[; ;mcc_generated_files/application/BMA253_accel.c: 160:     return yNewData;
+[e ) _yNewData ]
+[e $UE 31  ]
+"161
+[; ;mcc_generated_files/application/BMA253_accel.c: 161: }
+[e :UE 31 ]
+}
+"163
+[; ;mcc_generated_files/application/BMA253_accel.c: 163: static _Bool BMA253_NewAccelDataRdyZ(void) {
+[v _BMA253_NewAccelDataRdyZ `(a ~T0 @X0 1 sf ]
+{
+[e :U _BMA253_NewAccelDataRdyZ ]
+[f ]
+"164
+[; ;mcc_generated_files/application/BMA253_accel.c: 164:     _Bool zNewData;
+[v _zNewData `a ~T0 @X0 1 a ]
+"166
+[; ;mcc_generated_files/application/BMA253_accel.c: 166:     zNewData = (i2c_read1ByteRegister((0x19), (0x06)) & (0x01));
+[e = _zNewData -> & -> ( _i2c_read1ByteRegister (2 , -> -> 25 `i `uc -> -> 6 `i `uc `i -> 1 `i `a ]
+"168
+[; ;mcc_generated_files/application/BMA253_accel.c: 168:     return zNewData;
+[e ) _zNewData ]
+[e $UE 32  ]
+"169
+[; ;mcc_generated_files/application/BMA253_accel.c: 169: }
+[e :UE 32 ]
+}

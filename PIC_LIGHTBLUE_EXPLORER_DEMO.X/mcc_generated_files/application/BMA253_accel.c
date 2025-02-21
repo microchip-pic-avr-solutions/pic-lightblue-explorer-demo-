@@ -22,7 +22,7 @@
     CLAIMS IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT
     OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS
     SOFTWARE.
-*/
+ */
 
 #include "BMA253_accel.h"
 #include "../drivers/i2c_simple_master.h"
@@ -32,7 +32,7 @@
 \def DATA_READY_BIT_MASK
 This is a macro is used as a mask to filter only the Data Ready bit (bit 0)
 status result when confirming a data registers data is new/ready to read. 
-*/
+ */
 #define DATA_READY_BIT_MASK                 (0x01)
 /**
  \ingroup BMA253
@@ -65,112 +65,106 @@ static bool BMA253_NewAccelDataRdyY(void);
  */
 static bool BMA253_NewAccelDataRdyZ(void);
 
-void BMA253_Initialize(void)
-{
+uint8_t rad;
+
+void BMA253_Initialize(void) {
     i2c_write1ByteRegister(BMA253_ADDR, BMA253_PWR_MODE_ADDR, BMA253_NORMAL_MODE);
     i2c_write1ByteRegister(BMA253_ADDR, BMA253_BW_SELECT_ADDR, BMA253_BW_7_81HZ);
     i2c_write1ByteRegister(BMA253_ADDR, BMA253_RANGE_ADDR, BMA253_2G_RANGE);
+ //   i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT_EN_1_ADDR, 0b00000100);
+ //   i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT1_PIN_ADDR, 0b00000010);
+    i2c_write1ByteRegister(BMA253_ADDR, 0x16, 0b10000000);
+    i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT1_PIN_ADDR, 0b10000000);
+//    i2c_write1ByteRegister(BMA253_ADDR, BMA253_INT_DATA_ADDR, 0b00000001);
+    rad=i2c_read1ByteRegister(BMA253_ADDR,0x16);
+//    rad=i2c_read1ByteRegister(BMA253_ADDR,BMA253_INT_DATA_ADDR);    
 }
 
-void BMA253_GetAccelDataX(int16_t *xAccelData)
-{
+void BMA253_GetAccelDataX(int16_t *xAccelData) {
     uint8_t lsbData;
     uint8_t msbData;
-    while(!BMA253_NewAccelDataRdyX())
-    {
+    while (!BMA253_NewAccelDataRdyX()) {
         // Do Nothing until we have new data ready in the register
     }
-    
+
     lsbData = i2c_read1ByteRegister(BMA253_ADDR, BMA253_X_LSB_ADDR);
     msbData = i2c_read1ByteRegister(BMA253_ADDR, BMA253_X_MSB_ADDR);
-    *xAccelData = ( (((int16_t)msbData) << 8) | (lsbData) ) >> 4;
+    *xAccelData = ((((int16_t) msbData) << 8) | (lsbData)) >> 4;
 }
 
-void BMA253_GetAccelDataY(int16_t *yAccelData)
-{
+void BMA253_GetAccelDataY(int16_t *yAccelData) {
     uint8_t lsbData;
     uint8_t msbData;
-    while(!BMA253_NewAccelDataRdyY())
-    {
+    while (!BMA253_NewAccelDataRdyY()) {
         // Do Nothing until we have new data ready in the register
     }
-    
+
     lsbData = i2c_read1ByteRegister(BMA253_ADDR, BMA253_Y_LSB_ADDR);
     msbData = i2c_read1ByteRegister(BMA253_ADDR, BMA253_Y_MSB_ADDR);
-    *yAccelData = ( (((int16_t)msbData) << 8) | (lsbData) ) >> 4;
+    *yAccelData = ((((int16_t) msbData) << 8) | (lsbData)) >> 4;
 }
 
-void BMA253_GetAccelDataZ(int16_t *zAccelData)
-{
+void BMA253_GetAccelDataZ(int16_t *zAccelData) {
     uint8_t lsbData;
     uint8_t msbData;
-    while(!BMA253_NewAccelDataRdyZ())
-    {
+    while (!BMA253_NewAccelDataRdyZ()) {
         // Do Nothing until we have new data ready in the register
     }
-    
+
     lsbData = i2c_read1ByteRegister(BMA253_ADDR, BMA253_Z_LSB_ADDR);
     msbData = i2c_read1ByteRegister(BMA253_ADDR, BMA253_Z_MSB_ADDR);
-    *zAccelData = ( (((int16_t)msbData) << 8) | (lsbData) ) >> 4;
+    *zAccelData = ((((int16_t) msbData) << 8) | (lsbData)) >> 4;
 }
 
-void BMA253_GetAccelDataXYZ(BMA253_ACCEL_DATA_t *accelData)
-{
+void BMA253_GetAccelDataXYZ(BMA253_ACCEL_DATA_t *accelData) {
     int16_t sensorValue;
-    while (!BMA253_NewAccelDataRdyX())
-    {
+    while (!BMA253_NewAccelDataRdyX()) {
         // Do Nothing until we have new data ready in the register
     }
-    
+
     BMA253_GetAccelDataX(&sensorValue);
     accelData->x = sensorValue;
-    
-    while (!BMA253_NewAccelDataRdyY())
-    {
+
+    while (!BMA253_NewAccelDataRdyY()) {
         // Do Nothing until we have new data ready in the register
     }
-    
+
     BMA253_GetAccelDataY(&sensorValue);
     accelData->y = sensorValue;
-    
-     while (!BMA253_NewAccelDataRdyZ())
-    {
+
+    while (!BMA253_NewAccelDataRdyZ()) {
         // Do Nothing until we have new data ready in the register
     }
-    
+
     BMA253_GetAccelDataZ(&sensorValue);
     accelData->z = sensorValue;
 }
 
-uint8_t BMA253_GetAccelChipId(void)
-{
+uint8_t BMA253_GetAccelChipId(void) {
     return i2c_read1ByteRegister(BMA253_ADDR, BMA253_CHIP_ID_ADDR);
 }
 
-static bool BMA253_NewAccelDataRdyX(void)
-{
+static bool BMA253_NewAccelDataRdyX(void) {
     bool xNewData;
-    
+
     xNewData = (i2c_read1ByteRegister(BMA253_ADDR, BMA253_X_LSB_ADDR) & DATA_READY_BIT_MASK); //Is new data ready?
-    
+
     return xNewData;
 }
 
-static bool BMA253_NewAccelDataRdyY(void)
-{
+static bool BMA253_NewAccelDataRdyY(void) {
     bool yNewData;
-    
+
     yNewData = (i2c_read1ByteRegister(BMA253_ADDR, BMA253_Y_LSB_ADDR) & DATA_READY_BIT_MASK); //Is new data ready?
-    
+
     return yNewData;
 }
 
-static bool BMA253_NewAccelDataRdyZ(void)
-{
+static bool BMA253_NewAccelDataRdyZ(void) {
     bool zNewData;
-    
+
     zNewData = (i2c_read1ByteRegister(BMA253_ADDR, BMA253_Z_LSB_ADDR) & DATA_READY_BIT_MASK); //Is new data ready?
-    
+
     return zNewData;
 }
 

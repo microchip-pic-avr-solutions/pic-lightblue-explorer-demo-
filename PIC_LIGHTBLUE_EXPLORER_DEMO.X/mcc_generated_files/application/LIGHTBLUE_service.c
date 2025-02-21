@@ -183,7 +183,8 @@ typedef enum
     ACCEL_DATA_ID          = 'X',
     SERIAL_DATA_ID         = 'S',
     ERROR_ID               = 'R',
-    UI_CONFIG_DATA_ID      = 'U'
+    UI_CONFIG_DATA_ID      = 'U',
+    ACC_STATE              = 'A'
 }PROTOCOL_PACKET_TYPES_t;
 /**
  \ingroup LIGHTBLUE
@@ -249,6 +250,14 @@ This function is used to read PORT value read from pin connected to PUSH BUTTON 
  \retval Status 0 (OFF) | 1 (ON) \n
  */
 static uint8_t LIGHTBLUE_GetButtonValue(void);
+
+/**
+ \ingroup LIGHTBLUE
+ \brief  Private function used to request status of ACCELEROMETER reading the PORT value. \n
+ */
+
+static uint8_t LIGHTBLUE_GetAccState(void);
+
 
 /**
  \ingroup LIGHTBLUE
@@ -343,6 +352,18 @@ void LIGHTBLUE_PushButton(void)
     
     LIGHTBLUE_SendPacket(BUTTON_STATE_ID, payload);
 }
+
+void LIGHTBLUE_AccState(void)
+{
+    char payload[3];
+    uint8_t acc = LIGHTBLUE_GetAccState();
+    
+    *payload = '\0';
+    LIGHTBLUE_SplitByte(payload, acc);
+    
+    LIGHTBLUE_SendPacket(ACC_STATE, payload);
+}
+
 
 void LIGHTBLUE_LedState(void)
 {
@@ -488,6 +509,11 @@ static void LIGHTBLUE_SplitByte(char* payload, int8_t value)
 static uint8_t LIGHTBLUE_GetButtonValue(void)
 {
     return NOT_PRESSED_STATE - PushButtonGetValue(); // This is forcing proper data for LightBlue
+}
+
+static uint8_t LIGHTBLUE_GetAccState(void)
+{
+    return accelerometerInterruptBits.AccelerometerInterruptBits;
 }
 
 static uint8_t LIGHTBLUE_GetDataLedValue(void)

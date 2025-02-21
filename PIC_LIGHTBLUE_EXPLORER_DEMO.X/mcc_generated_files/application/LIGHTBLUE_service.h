@@ -125,5 +125,6 @@ Packet ID Options:
  */
 void LIGHTBLUE_ParseIncomingPacket(char receivedByte);
 
+void LIGHTBLUE_AccState(void);
 #endif	/* LIGHTBLUE_SERVICE_H */
 
