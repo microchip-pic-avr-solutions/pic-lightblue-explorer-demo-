@@ -62,22 +62,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22424
 [; ;C:/Users/jjega/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.8.149/xc8\pic\include\proc\pic16lf18456.h: 22424: extern volatile PIR0bits_t PIR0bits __attribute__((address(0x70C)));
 [v _PIR0bits `VS1020 ~T0 @X0 0 e@1804 ]
-"50 ./mcc_generated_files/application/LIGHTBLUE_service.h
-[; ;./mcc_generated_files/application/LIGHTBLUE_service.h: 50: void LIGHTBLUE_TemperatureSensor(void);
-[v _LIGHTBLUE_TemperatureSensor `(v ~T0 @X0 0 ef ]
-"64
-[; ;./mcc_generated_files/application/LIGHTBLUE_service.h: 64: void LIGHTBLUE_AccelSensor(void);
-[v _LIGHTBLUE_AccelSensor `(v ~T0 @X0 0 ef ]
-"75
-[; ;./mcc_generated_files/application/LIGHTBLUE_service.h: 75: void LIGHTBLUE_PushButton(void);
-[v _LIGHTBLUE_PushButton `(v ~T0 @X0 0 ef ]
-"89
-[; ;./mcc_generated_files/application/LIGHTBLUE_service.h: 89: void LIGHTBLUE_LedState(void);
-[v _LIGHTBLUE_LedState `(v ~T0 @X0 0 ef ]
-"100
-[; ;./mcc_generated_files/application/LIGHTBLUE_service.h: 100: void LIGHTBLUE_SendProtocolVersion(void);
-[v _LIGHTBLUE_SendProtocolVersion `(v ~T0 @X0 0 ef ]
-"126
+"126 ./mcc_generated_files/application/LIGHTBLUE_service.h
 [; ;./mcc_generated_files/application/LIGHTBLUE_service.h: 126: void LIGHTBLUE_ParseIncomingPacket(char receivedByte);
 [v _LIGHTBLUE_ParseIncomingPacket `(v ~T0 @X0 0 ef1`uc ]
 "293 ./mcc_generated_files/rn487x/rn487x.h
@@ -1788,21 +1773,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "95
 [; ;main.c: 95:                 (PIR0bits.TMR0IF = 0);
 [e = . . _PIR0bits 0 3 -> -> 0 `i `uc ]
-"97
-[; ;main.c: 97:                 LIGHTBLUE_TemperatureSensor();
-[e ( _LIGHTBLUE_TemperatureSensor ..  ]
-"98
-[; ;main.c: 98:                 LIGHTBLUE_AccelSensor();
-[e ( _LIGHTBLUE_AccelSensor ..  ]
-"99
-[; ;main.c: 99:                 LIGHTBLUE_PushButton();
-[e ( _LIGHTBLUE_PushButton ..  ]
-"100
-[; ;main.c: 100:                 LIGHTBLUE_LedState();
-[e ( _LIGHTBLUE_LedState ..  ]
-"101
-[; ;main.c: 101:                 LIGHTBLUE_SendProtocolVersion();
-[e ( _LIGHTBLUE_SendProtocolVersion ..  ]
 "102
 [; ;main.c: 102:             } else {
 }
